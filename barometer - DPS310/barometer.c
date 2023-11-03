@@ -1,8 +1,10 @@
 /*
  * DPS310.c
  *
- *  Created on: Jan 26, 2023
- *      Author: danny
+ *  Code for barometer of Backup Drone Sensor Board
+ * 	Should calibrate and then print continuous polling data
+ * 	Use registers from data sheet
+ * 	Polls starting altitude and new altitude
  */
 
 #include "stm32l4xx_hal.h"
@@ -147,7 +149,7 @@ void DPS310_GetPress (void)
 			  		  }
 			  		  iter++;
 
-			  		  sprintf(bufferr, "Difference from launc point: %f\n", dif);
+			  		  sprintf(bufferr, "Difference from launch point: %f\n", dif);
 			  		  uprintf(bufferr);
 
 }
