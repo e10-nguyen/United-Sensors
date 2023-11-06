@@ -1,8 +1,8 @@
 /*
  * DPS310.c
- *
- *  Created on: Jan 26, 2023
- *      Author: danny
+ *	Online Driver for DPS310 Pressure Sensor
+ *   Modified by: Ethan Nguyen
+ * 	
  */
 
 #include "stm32l4xx_hal.h"
@@ -41,6 +41,7 @@ void uprintf(char *str)
 	HAL_UART_Transmit(&huart2, (uint8_t *)str, strlen(str), 1000);
 }
 
+//two complement function
 void getTwosComplement(int32_t *raw, uint8_t length)
 {
 	if (*raw & ((uint32_t)1 << (length - 1)))
@@ -147,7 +148,7 @@ void DPS310_GetPress (void)
 			  		  }
 			  		  iter++;
 
-			  		  sprintf(bufferr, "Difference from launc point: %f\n", dif);
+			  		  sprintf(bufferr, "Difference from launch point: %f\n", dif);
 			  		  uprintf(bufferr);
 
 }
