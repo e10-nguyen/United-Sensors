@@ -1,0 +1,3 @@
+https://www.adafruit.com/product/4479
+
+https://github.com/adafruit/Adafruit_CircuitPython_LIS2MDL
