@@ -1,0 +1,36 @@
+# STM32Cube IDE project files
+/.metadata/
+/.settings/
+/Debug/
+/Release/
+/*.launch
+/*.pydevproject
+/*.cproject
+/*.project
+/*.settings/
+/*.mxproject
+/*.mxmetadata
+
+# Eclipse IDE
+**/.metadata/
+**/.settings/
+
+# Visual Studio Code
+**/.vscode/
+
+# Debug and Release folders
+**/Debug/
+**/Release/
+
+# PyDev project files
+**/*.launch
+**/*.pydevproject
+
+# CDT project files
+**/*.cproject
+**/*.project
+**/*.settings/
+
+# STM32CubeMX project files
+**/*.mxproject
+**/*.mxmetadata
