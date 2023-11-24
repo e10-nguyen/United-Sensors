@@ -34,3 +34,5 @@
 # STM32CubeMX project files
 **/*.mxproject
 **/*.mxmetadata
+
+**/.DS_Store
