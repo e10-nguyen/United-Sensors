@@ -76,6 +76,8 @@ void SystemClock_Config(void);
 void SPI1_Init(void);
 void LIS3MDL_Init(void);
 void LIS3MDL_ReadData(uint8_t* data);
+
+void LIS3MDL_ReadProcessData(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -94,6 +96,8 @@ int main(void)
   
   SPI1_Init();
   LIS3MDL_Init();
+  
+  LIS3MDL_ReadProcessData();
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -173,6 +177,19 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 }
+
+
+/* LIS3MDL Read and Process Data Code */
+void LIS3MDL_ReadProcessData(void)
+{
+  // Your code to read data from LIS3MDL goes here
+  // Process the data as required
+  // Example: Convert raw data to meaningful values
+
+  // UART Transmission of the processed data
+  // Use a function similar to uprintf to send data over UART
+}
+
 
 /* USER CODE BEGIN 4 */
 
