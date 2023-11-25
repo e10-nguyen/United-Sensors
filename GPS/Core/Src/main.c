@@ -1,10 +1,10 @@
-/* USER CODE BEGIN Header */
+/* UNITED SENSORS */
 /**
   ******************************************************************************
   * @file           : main.c
   * @brief          : Main program body
   ******************************************************************************
-  * @attention
+  * @HM
   *
   * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
