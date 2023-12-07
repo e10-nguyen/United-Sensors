@@ -26,13 +26,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "stm32l4xx_hal.h"
-#include "math.h"
-#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "barometer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -53,137 +50,27 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-SPI_HandleTypeDef hspi1;
+I2C_HandleTypeDef hi2c1;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-char bufferr[32] = {0};
-int val = 0;
-uint8_t p1 = 0;
-uint8_t p2 = 0;
-uint8_t p3 = 0;
-int val2 = 0;
-float trawsc = 0;
-float prawsc = 0;
-float pcomp = 0;
-int iter = 0;
-float initial = 0;
-float altitude = 0;
-float dif = 0;
-int dc00 = 0;
-int dc10 = 0;
-int dc01 = 0;
-int dc11 = 0;
-int dc20 = 0;
-int dc21 = 0;
-int dc30 = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
-static void MX_SPI1_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void uprintf(char *str)
-{
-    HAL_UART_Transmit(&huart2, (uint8_t *)str, strlen(str), 1000);
-}
 
-// Function to send and receive data using SPI
-void SPI_TransmitReceive(uint8_t *txData, uint8_t *rxData, uint16_t size)
-{
-    HAL_GPIO_WritePin(DPS310_CS_PORT, DPS310_CS_PIN, GPIO_PIN_RESET);
-    HAL_SPI_TransmitReceive(DPS310_SPI, txData, rxData, size, 1000);
-    HAL_GPIO_WritePin(DPS310_CS_PORT, DPS310_CS_PIN, GPIO_PIN_SET);
-}
 
-void getTwosComplement(int32_t *raw, uint8_t length)
-{
-    if (*raw & ((uint32_t)1 << (length - 1)))
-    {
-        *raw -= (uint32_t)1 << length;
-    }
-}
-
-void read_calibration_data(void)
-{
-    int k = 253952;
-    // READ FROM reg 0x10 to 0x21
-    uint8_t buffer[18] = {0};
-    // Modify the following line to use SPI for reading calibration data
-    SPI_TransmitReceive((uint8_t[]){0x80 | 0x10, 0x00, 0x00}, buffer, 18);
-    uint32_t c00 = ((uint32_t)buffer[3] << 12) | ((uint32_t)buffer[4] << 4) | (((uint32_t)buffer[5] >> 4) & 0x0F);
-    getTwosComplement(&c00, 20);
-    dc00 = (int)c00;
-
-    // Modify the following lines similarly for other registers
-
-    // WRITE TO REG 0x06
-    uint8_t prscfg[2] = {0x06, 0x04};
-    SPI_TransmitReceive(prscfg, NULL, 2);
-
-    // WRITE TO REG 0x07
-    uint8_t tmpcfg[2] = {0x07, 0x04};
-    SPI_TransmitReceive(tmpcfg, NULL, 2);
-
-    // WRITE TO REG 0x09
-    uint8_t cfgreg[2] = {0x09, 0x0C};
-    SPI_TransmitReceive(cfgreg, NULL, 2);
-
-    // WRITE 0x07 TO REG 0x08
-    uint8_t meascfg[2] = {0x08, 0x07};
-    SPI_TransmitReceive(meascfg, NULL, 2);
-}
-
-void DPS310_GetPress(void)
-{
-    int k = 253952;
-    // READ REG 0x03 TO REG 0x05
-    uint8_t tmp[4] = {0x80 | 0x03, 0x00, 0x00, 0x00};
-    SPI_TransmitReceive(tmp, tmp, 4);
-    uint32_t tmpraw = ((tmp[1] << 16) | (tmp[2] << 8) | tmp[3]);
-    getTwosComplement(&tmpraw, 24);
-    int traw = (int)tmpraw;
-    val = traw;
-
-    // READ REG 0x00 TO REG 0x02
-    uint8_t prs[4] = {0x80 | 0x00, 0x00, 0x00, 0x00};
-    SPI_TransmitReceive(prs, prs, 4);
-    uint32_t prsraw = (prs[1] << 16) | (prs[2] << 8) | prs[3];
-    getTwosComplement(&prsraw, 24);
-    int praw = (int)prsraw;
-    val2 = praw;
-
-    // CALC PRESSURE
-    prawsc = (float)val2 / k;
-    trawsc = (float)val / k;
-    pcomp = dc00 + prawsc * (dc10 + prawsc * (dc20 + prawsc * dc30)) + trawsc * dc01 + trawsc * prawsc * (dc11 + prawsc * dc21);
-    pcomp = pcomp / 100;
-    altitude = (float)44330 * (1 - pow(pcomp / 1015, 1 / 5.255));
-    if (iter == 0)
-    {
-        initial = altitude;
-    }
-    else
-    {
-        dif = altitude - initial;
-    }
-    iter++;
-
-    sprintf(bufferr, "Difference from launch point: %f\n", dif);
-    uprintf(bufferr);
-}
-
-void DPS310_Start(void)
-{
-    read_calibration_data();
-}
 /* USER CODE END 0 */
 
 /**
@@ -215,17 +102,19 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
-  MX_SPI1_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-
+  DPS310_Start();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  DPS310_GetPress();
+	  HAL_Delay(1000);
     /* USER CODE END WHILE */
-	  //read polling code here
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -281,42 +170,50 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief SPI1 Initialization Function
+  * @brief I2C1 Initialization Function
   * @param None
   * @retval None
   */
-static void MX_SPI1_Init(void)
+static void MX_I2C1_Init(void)
 {
 
-  /* USER CODE BEGIN SPI1_Init 0 */
+  /* USER CODE BEGIN I2C1_Init 0 */
 
-  /* USER CODE END SPI1_Init 0 */
+  /* USER CODE END I2C1_Init 0 */
 
-  /* USER CODE BEGIN SPI1_Init 1 */
+  /* USER CODE BEGIN I2C1_Init 1 */
 
-  /* USER CODE END SPI1_Init 1 */
-  /* SPI1 parameter configuration*/
-  hspi1.Instance = SPI1;
-  hspi1.Init.Mode = SPI_MODE_MASTER;
-  hspi1.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
-  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
-  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
-  hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
-  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
-  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
-  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-  hspi1.Init.CRCPolynomial = 7;
-  hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
-  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
-  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x10909CEC;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
   {
     Error_Handler();
   }
-  /* USER CODE BEGIN SPI1_Init 2 */
 
-  /* USER CODE END SPI1_Init 2 */
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
 
 }
 
