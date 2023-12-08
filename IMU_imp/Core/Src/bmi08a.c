@@ -758,7 +758,7 @@ int8_t bmi08a_init(struct bmi08x_dev *dev)
         {
             /* Set dummy byte in case of SPI interface */
             dev->dummy_byte = BMI08X_ENABLE;
-//            printf("Dev correct\n\r");
+            printf("Dev correct\n\r");
             /* Dummy read of Chip-ID in SPI mode */
             rslt = get_regs(BMI08X_REG_ACCEL_CHIP_ID, &chip_id, 1, dev);
         }
@@ -770,21 +770,26 @@ int8_t bmi08a_init(struct bmi08x_dev *dev)
 
         if (rslt == BMI08X_OK)
         {
-//        	chip_id = 0;
+        	//chip_id = 0;
+        	printf("starting init \n\r");
             rslt = get_regs(BMI08X_REG_ACCEL_CHIP_ID, &chip_id, 1, dev);
 
             if (rslt == BMI08X_OK)
             {
+            	printf("OK \n\r");
                 /* Check for chip id validity */
             	printf("%d: Chip id\r\n", chip_id);
-                if ((dev->variant == BMI085_VARIANT) && (chip_id == BMI085_ACCEL_CHIP_ID))
+
+                if ((dev->variant == BMI085_VARIANT) && (chip_id == BMI088_ACCEL_CHIP_ID)) //BMI085_ACCEL_CHIP_ID
                 {
+                	printf("BMI085");
                     /* Store the chip ID in dev structure */
                     dev->accel_chip_id = chip_id;
                 }
                 else if ((dev->variant == BMI088_VARIANT) && (chip_id == BMI088_ACCEL_CHIP_ID))
                 {
                     /* Store the chip ID in dev structure */
+                	printf("BMI088");
                     dev->accel_chip_id = chip_id;
                 }
                 else
