@@ -1,19 +1,19 @@
-/* USER CODE BEGIN Header */
+/* UNITED SENSORS */
 /**
-  ******************************************************************************
+  ****************************************************************************
   * @file           : main.c
   * @brief          : Main program body
-  ******************************************************************************
-  * @attention
+  ****************************************************************************
+  * @HM
   *
-  * Copyright (c) 2023 STMicroelectronics.
+  * Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
   * in the root directory of this software component.
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
-  ******************************************************************************
+  ****************************************************************************
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
@@ -21,6 +21,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -33,7 +34,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,8 +53,11 @@ char GPS_Payyload[100];
 uint8_t Flag = 0;
 static int Msgindex;
 char *ptr;
+
 float time, Latitude, Longitude;
 int Hours, Min, Sec;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -64,8 +67,10 @@ static void MX_DMA_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
+
 void get_location(void);
 void Format_data(float Time, float Lat, float Long);
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -80,6 +85,7 @@ void Format_data(float Time, float Lat, float Long);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -105,6 +111,7 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_UART_Receive_DMA(&huart1, (uint8_t*)Rxdata, 700);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,7 +121,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	get_location();
+	  get_location();
+
+
   }
   /* USER CODE END 3 */
 }
@@ -138,14 +147,14 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
+  RCC_OscInitStruct.MSICalibrationValue = 0;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_6;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_MSI;
   RCC_OscInitStruct.PLL.PLLM = 1;
-  RCC_OscInitStruct.PLL.PLLN = 10;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV7;
+  RCC_OscInitStruct.PLL.PLLN = 40;
   RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
   RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -257,38 +266,32 @@ static void MX_DMA_Init(void)
 /**
   * @brief GPIO Initialization Function
   * @param None
-
   * @retval None
   */
 static void MX_GPIO_Init(void)
 {
-/* USER CODE BEGIN MX_GPIO_Init_1 */
-/* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
-/* USER CODE BEGIN MX_GPIO_Init_2 */
-/* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	Flag = 1;
 }
-void get_location(void)
-{
+
+void get_location(void){
+
 	//HAL_UART_Transmit(&huart2,(uint8_t*)Txdata,strlen(Txdata),HAL_MAX_DELAY);
-	if(Flag == 1)
-	{
+
+	if(Flag == 1){
 		Msgindex=0;
 		strcpy(Txdata, (char*)(Rxdata));
 		ptr=strstr(Txdata, "GPRMC");
-		if(*ptr == 'G')
-		{
+		if(*ptr == 'G'){
 			while(1){
 				GPS_Payyload[Msgindex]= *ptr;
 				Msgindex++;
@@ -305,12 +308,13 @@ void get_location(void)
 		}
 	}
 }
+
 void Format_data(float Time, float Lat, float Long){
 	char Data[100];
 	Hours=(int)Time/1000;
 	Min=(int)(Time - (Hours*10000))/100;
 	Sec=(int)(Time-((Hours*10000)+(Min*100)));
-	sprintf(Data, "\r\n Lat=%f, Long=%f",Latitude,Longitude);
+	sprintf(Data, "\r\n @TIME=%f, THE GPS MEASURES:		LAT=%f, LONG=%f", Time, Latitude,Longitude);
 	HAL_UART_Transmit(&huart2,(uint8_t*)Data,strlen(Data),HAL_MAX_DELAY);
 	HAL_UART_Transmit(&huart2,(uint8_t*)"\r\n\n",3,HAL_MAX_DELAY);
 }
