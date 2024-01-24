@@ -2470,8 +2470,6 @@ W = angled&lt;p&gt;
 <contactref element="L2" pad="2"/>
 <contactref element="L7" pad="2"/>
 <contactref element="L3" pad="2"/>
-<contactref element="IC2" pad="1"/>
-<contactref element="IC2" pad="2"/>
 <wire x1="-46.288" y1="-210.578" x2="-41.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.288" y1="-210.578" x2="-46.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.788" y1="-210.578" x2="-51.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
@@ -2518,8 +2516,6 @@ W = angled&lt;p&gt;
 <wire x1="65.786" y1="27.178" x2="48.768" y2="26.162" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.11" y1="-407.67" x2="-57.788" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.81" y1="-410.972" x2="-60.11" y2="-407.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.42" y1="-429.514" x2="-61.81" y2="-410.972" width="0" layer="19" extent="1-1"/>
-<wire x1="-55.88" y1="-429.514" x2="-58.42" y2="-429.514" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="AIRSPEED" pad="1"/>
@@ -2887,8 +2883,6 @@ W = angled&lt;p&gt;
 <wire x1="68.326" y1="37.338" x2="65.278" y2="37.338" width="0.2032" layer="1"/>
 <wire x1="65.278" y1="37.338" x2="62.992" y2="35.052" width="0.2032" layer="1"/>
 <wire x1="62.738" y1="35.052" x2="62.992" y2="35.052" width="0.2032" layer="1"/>
-<contactref element="U6" pad="115"/>
-<wire x1="-44.288" y1="-216.904" x2="31.317" y2="23.189" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_DN">
 <contactref element="USB_COMM_MODE_FILTER" pad="7"/>
@@ -3063,23 +3057,15 @@ W = angled&lt;p&gt;
 </signal>
 <signal name="GPIO_EXTI2">
 <contactref element="R16" pad="1"/>
-<contactref element="U6" pad="116"/>
-<wire x1="-44.788" y1="-216.904" x2="-3.12" y2="-26.416" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO_EXTI4">
 <contactref element="R18" pad="1"/>
-<contactref element="U6" pad="118"/>
-<wire x1="-45.788" y1="-216.904" x2="-3.12" y2="-29.718" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO_EXTI0">
 <contactref element="R14" pad="1"/>
-<contactref element="U6" pad="114"/>
-<wire x1="-43.788" y1="-216.904" x2="-5.66" y2="-26.416" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO_EXTI3">
 <contactref element="R17" pad="1"/>
-<contactref element="U6" pad="117"/>
-<wire x1="-45.288" y1="-216.904" x2="-5.66" y2="-29.718" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC_IN">
 <contactref element="R11" pad="2"/>
@@ -3506,6 +3492,17 @@ W = angled&lt;p&gt;
 </signal>
 <signal name="SWDIO_O1">
 <contactref element="JP7" pad="5"/>
+</signal>
+<signal name="3V1">
+<contactref element="IC2" pad="2"/>
+<contactref element="IC2" pad="1"/>
+<wire x1="-55.88" y1="-429.514" x2="-58.42" y2="-429.514" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="IC2" pad="24"/>
+</signal>
+<signal name="N$7">
+<contactref element="IC2" pad="23"/>
 </signal>
 <signal name="3V2">
 <contactref element="C28" pad="1"/>
