@@ -1598,6 +1598,48 @@ W = angled&lt;p&gt;
 </package3d>
 </packages3d>
 </library>
+<library name="LIS3MDLTR">
+<packages>
+<package name="XDCR_LIS3MDLTR">
+<wire x1="-1.075" y1="1.075" x2="-1.075" y2="-1.075" width="0.127" layer="51"/>
+<wire x1="-1.075" y1="-1.075" x2="1.075" y2="-1.075" width="0.127" layer="51"/>
+<wire x1="1.075" y1="-1.075" x2="1.075" y2="1.075" width="0.127" layer="51"/>
+<wire x1="1.075" y1="1.075" x2="-1.075" y2="1.075" width="0.127" layer="51"/>
+<wire x1="-1.325" y1="1.325" x2="-1.325" y2="-1.325" width="0.05" layer="39"/>
+<wire x1="-1.325" y1="-1.325" x2="1.325" y2="-1.325" width="0.05" layer="39"/>
+<wire x1="1.325" y1="-1.325" x2="1.325" y2="1.325" width="0.05" layer="39"/>
+<wire x1="1.325" y1="1.325" x2="-1.325" y2="1.325" width="0.05" layer="39"/>
+<text x="-1.47743125" y="1.427409375" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.378290625" y="-2.1328" size="0.6096" layer="27">&gt;VALUE</text>
+<circle x="-1.56" y="0.82" radius="0.1" width="0.2" layer="51"/>
+<circle x="-1.56" y="0.82" radius="0.1" width="0.2" layer="21"/>
+<rectangle x1="0.525" y1="0.525" x2="1" y2="0.975" layer="29"/>
+<rectangle x1="-1" y1="0.525" x2="-0.525" y2="0.975" layer="29"/>
+<rectangle x1="-1" y1="0.025" x2="-0.525" y2="0.475" layer="29"/>
+<rectangle x1="-1" y1="-0.475" x2="-0.525" y2="-0.025" layer="29"/>
+<rectangle x1="-1" y1="-0.975" x2="-0.525" y2="-0.525" layer="29"/>
+<rectangle x1="0.525" y1="0.025" x2="1" y2="0.475" layer="29"/>
+<rectangle x1="0.525" y1="-0.475" x2="1" y2="-0.025" layer="29"/>
+<rectangle x1="0.525" y1="-0.975" x2="1" y2="-0.525" layer="29"/>
+<rectangle x1="-0.475" y1="-1" x2="-0.025" y2="-0.525" layer="29"/>
+<rectangle x1="-0.475" y1="0.525" x2="-0.025" y2="1" layer="29"/>
+<rectangle x1="0.025" y1="0.525" x2="0.475" y2="1" layer="29"/>
+<rectangle x1="0.025" y1="-1" x2="0.475" y2="-0.525" layer="29"/>
+<smd name="1" x="-0.7625" y="0.75" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="2" x="-0.7625" y="0.25" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="3" x="-0.7625" y="-0.25" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="4" x="-0.7625" y="-0.75" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="5" x="-0.25" y="-0.7625" dx="0.375" dy="0.35" layer="1" rot="R90" stop="no"/>
+<smd name="6" x="0.25" y="-0.7625" dx="0.375" dy="0.35" layer="1" rot="R90" stop="no"/>
+<smd name="7" x="0.7625" y="-0.75" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="8" x="0.7625" y="-0.25" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="9" x="0.7625" y="0.25" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="0.7625" y="0.75" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="11" x="0.25" y="0.7625" dx="0.375" dy="0.35" layer="1" rot="R270" stop="no"/>
+<smd name="12" x="-0.25" y="0.7625" dx="0.375" dy="0.35" layer="1" rot="R270" stop="no"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2148,6 +2190,7 @@ W = angled&lt;p&gt;
 <attribute name="PRICE" value="None" x="-50.038" y="-199.898" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1041111&amp;manufacturer=STMicroelectronics&amp;part_name=STM32H743ZIT6&amp;search_term=stm32h743" x="-50.038" y="-199.898" size="1.778" layer="27" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/STM32H743ZIT6/STMicroelectronics/view-part/?ref=snap" x="-50.038" y="-199.898" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="X" x="-50.038" y="-199.898" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-61.738" y="-211.898" size="1.27" layer="27" align="top-left"/>
 </element>
 <element name="U6" library="STM32H743ZIT6" package="QFP50P2200X2200X160-144N" value="STM32H743ZIT6" x="-50.038" y="-227.584" smashed="yes">
@@ -2161,20 +2204,22 @@ W = angled&lt;p&gt;
 <attribute name="PRICE" value="None" x="-74.422" y="-199.898" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1041111&amp;manufacturer=STMicroelectronics&amp;part_name=STM32H743ZIT6&amp;search_term=stm32h743" x="-74.422" y="-199.898" size="1.778" layer="27" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/STM32H743ZIT6/STMicroelectronics/view-part/?ref=snap" x="-74.422" y="-199.898" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="X" x="-50.038" y="-227.584" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-61.738" y="-239.584" size="1.27" layer="27" align="top-left"/>
 </element>
-<element name="U7" library="STM32H743ZIT6" package="QFP50P2200X2200X160-144N" value="STM32H743ZIT6" x="-50.038" y="-255.27" smashed="yes">
-<attribute name="AVAILABILITY" value="In Stock" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/STM32H743ZIT6/STMicroelectronics/view-part/?ref=eda" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value=" ARM® Cortex®-M7 STM32H7 Microcontroller IC 32-Bit Single-Core 480MHz 2MB (2M x 8) FLASH 144-LQFP (20x20) " x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="STMicroelectronics" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="STM32H743ZIT6" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-61.738" y="-243.27" size="1.27" layer="25"/>
-<attribute name="PACKAGE" value="LQFP-144 STMicroelectronics" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="None" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1041111&amp;manufacturer=STMicroelectronics&amp;part_name=STM32H743ZIT6&amp;search_term=stm32h743" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/STM32H743ZIT6/STMicroelectronics/view-part/?ref=snap" x="-74.422" y="-227.584" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-61.738" y="-267.27" size="1.27" layer="27" align="top-left"/>
+<element name="U7" library="STM32H743ZIT6" package="QFP50P2200X2200X160-144N" value="STM32H743ZIT6" x="-50.292" y="-254.254" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/STM32H743ZIT6/STMicroelectronics/view-part/?ref=eda" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" ARM® Cortex®-M7 STM32H7 Microcontroller IC 32-Bit Single-Core 480MHz 2MB (2M x 8) FLASH 144-LQFP (20x20) " x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="STM32H743ZIT6" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-61.992" y="-242.254" size="1.27" layer="25"/>
+<attribute name="PACKAGE" value="LQFP-144 STMicroelectronics" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1041111&amp;manufacturer=STMicroelectronics&amp;part_name=STM32H743ZIT6&amp;search_term=stm32h743" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/STM32H743ZIT6/STMicroelectronics/view-part/?ref=snap" x="-74.676" y="-226.568" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="X" x="-50.292" y="-254.254" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-61.992" y="-266.254" size="1.27" layer="27" align="top-left"/>
 </element>
 <element name="U8" library="STM32H743ZIT6" package="QFP50P2200X2200X160-144N" value="STM32H743ZIT6" x="-50.038" y="-282.956" smashed="yes">
 <attribute name="AVAILABILITY" value="In Stock" x="-74.422" y="-255.27" size="1.778" layer="27" display="off"/>
@@ -2187,6 +2232,7 @@ W = angled&lt;p&gt;
 <attribute name="PRICE" value="None" x="-74.422" y="-255.27" size="1.778" layer="27" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=1041111&amp;manufacturer=STMicroelectronics&amp;part_name=STM32H743ZIT6&amp;search_term=stm32h743" x="-74.422" y="-255.27" size="1.778" layer="27" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/STM32H743ZIT6/STMicroelectronics/view-part/?ref=snap" x="-74.422" y="-255.27" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="X" x="-50.038" y="-282.956" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-61.738" y="-294.956" size="1.27" layer="27" align="top-left"/>
 </element>
 <element name="U1" library="TPD4F003DQDR" package="DQD8_1P2X0P4" value="TPD4F003DQDR" x="-42.164" y="-343.154" smashed="yes">
@@ -2348,6 +2394,60 @@ W = angled&lt;p&gt;
 <attribute name="PROD_ID" value="RES-08609" x="-60.706" y="-469.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-60.96" y="-470.662" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
+<element name="U9" library="LIS3MDLTR" package="XDCR_LIS3MDLTR" value="LIS3MDLTR" x="-65.024" y="-468.63" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=eda" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2) " x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="LIS3MDLTR" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-66.50143125" y="-467.202590625" size="0.6096" layer="25"/>
+<attribute name="PACKAGE" value="VFLGA-12 STMicroelectronics" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=382740&amp;manufacturer=STMicroelectronics&amp;part_name=LIS3MDLTR&amp;search_term=None" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=snap" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-66.402290625" y="-470.7628" size="0.6096" layer="27"/>
+</element>
+<element name="U11" library="LIS3MDLTR" package="XDCR_LIS3MDLTR" value="LIS3MDLTR" x="-69.342" y="-473.964" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=eda" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2) " x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="LIS3MDLTR" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-70.81943125" y="-472.536590625" size="0.6096" layer="25"/>
+<attribute name="PACKAGE" value="VFLGA-12 STMicroelectronics" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=382740&amp;manufacturer=STMicroelectronics&amp;part_name=LIS3MDLTR&amp;search_term=None" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=snap" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.720290625" y="-476.0968" size="0.6096" layer="27"/>
+</element>
+<element name="C34" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-4" package3d_urn="urn:adsk.eagle:package:5408/1" value="0.1uF" x="-68.834" y="-485.902" smashed="yes">
+<attribute name="NAME" x="-70.485" y="-483.743" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="6" x="-68.834" y="-485.902" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.485" y="-489.331" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="C35" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-4" package3d_urn="urn:adsk.eagle:package:5408/1" value="0.1uF" x="-68.834" y="-494.03" smashed="yes">
+<attribute name="NAME" x="-70.485" y="-491.871" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="6" x="-68.834" y="-494.03" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.485" y="-497.459" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="U10" library="LIS3MDLTR" package="XDCR_LIS3MDLTR" value="LIS3MDLTR" x="-69.342" y="-508.508" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=eda" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2) " x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="LIS3MDLTR" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-70.81943125" y="-507.080590625" size="0.6096" layer="25"/>
+<attribute name="PACKAGE" value="VFLGA-12 STMicroelectronics" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=382740&amp;manufacturer=STMicroelectronics&amp;part_name=LIS3MDLTR&amp;search_term=None" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=snap" x="-73.66" y="-495.3" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.720290625" y="-510.6408" size="0.6096" layer="27"/>
+</element>
+<element name="C36" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" package="C2.5-4" package3d_urn="urn:adsk.eagle:package:5408/1" value="0.1uF" x="-68.834" y="-502.158" smashed="yes">
+<attribute name="NAME" x="-70.485" y="-499.999" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="6" x="-73.152" y="-502.158" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.485" y="-505.587" size="1.27" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="3V3">
@@ -2472,6 +2572,12 @@ W = angled&lt;p&gt;
 <contactref element="L3" pad="2"/>
 <contactref element="IC2" pad="1"/>
 <contactref element="IC2" pad="2"/>
+<contactref element="U9" pad="6"/>
+<contactref element="U11" pad="6"/>
+<contactref element="U11" pad="5"/>
+<contactref element="U9" pad="5"/>
+<contactref element="U10" pad="6"/>
+<contactref element="U10" pad="5"/>
 <wire x1="-46.288" y1="-210.578" x2="-41.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.288" y1="-210.578" x2="-46.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.788" y1="-210.578" x2="-51.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
@@ -2520,6 +2626,12 @@ W = angled&lt;p&gt;
 <wire x1="-61.81" y1="-410.972" x2="-60.11" y2="-407.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.42" y1="-429.514" x2="-61.81" y2="-410.972" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.88" y1="-429.514" x2="-58.42" y2="-429.514" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.774" y1="-469.3925" x2="-58.42" y2="-429.514" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.274" y1="-469.3925" x2="-64.774" y2="-469.3925" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.092" y1="-474.7265" x2="-65.274" y2="-469.3925" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.592" y1="-474.7265" x2="-69.092" y2="-474.7265" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.092" y1="-509.2705" x2="-69.092" y2="-474.7265" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.592" y1="-509.2705" x2="-69.092" y2="-509.2705" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="AIRSPEED" pad="1"/>
@@ -2645,7 +2757,6 @@ W = angled&lt;p&gt;
 <via x="49.53" y="33.02" extent="1-16" drill="0.35"/>
 <wire x1="68.326" y1="29.718" x2="67.31" y2="29.718" width="0.2032" layer="1"/>
 <via x="67.31" y="29.718" extent="1-16" drill="0.35"/>
-<contactref element="Y1" pad="2"/>
 <contactref element="BAROMETER" pad="1"/>
 <contactref element="BAROMETER" pad="7"/>
 <contactref element="C1" pad="2"/>
@@ -2690,6 +2801,18 @@ W = angled&lt;p&gt;
 <contactref element="C31" pad="2"/>
 <contactref element="C32" pad="2"/>
 <contactref element="C33" pad="2"/>
+<contactref element="U9" pad="3"/>
+<contactref element="U11" pad="3"/>
+<contactref element="C34" pad="2"/>
+<contactref element="U9" pad="2"/>
+<contactref element="U9" pad="12"/>
+<contactref element="C35" pad="2"/>
+<contactref element="U11" pad="2"/>
+<contactref element="U11" pad="12"/>
+<contactref element="U10" pad="3"/>
+<contactref element="C36" pad="2"/>
+<contactref element="U10" pad="2"/>
+<contactref element="U10" pad="12"/>
 <wire x1="-57.428" y1="-454.511" x2="-51.308" y2="-455.422" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.928" y1="-454.511" x2="-57.428" y2="-454.511" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.928" y1="-454.511" x2="-57.928" y2="-454.511" width="0" layer="19" extent="1-1"/>
@@ -2697,10 +2820,22 @@ W = angled&lt;p&gt;
 <wire x1="-53.594" y1="-446.786" x2="-58.674" y2="-446.786" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.594" y1="-463.55" x2="-51.308" y2="-455.422" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.674" y1="-463.55" x2="-53.594" y2="-463.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.274" y1="-467.8675" x2="-58.674" y2="-463.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.7865" y1="-468.38" x2="-65.274" y2="-467.8675" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.7865" y1="-468.88" x2="-65.7865" y2="-468.38" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.592" y1="-473.2015" x2="-65.7865" y2="-468.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.1045" y1="-473.714" x2="-69.592" y2="-473.2015" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.1045" y1="-474.214" x2="-70.1045" y2="-473.714" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.308" y1="-438.404" x2="-53.594" y2="-446.786" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.428" y1="-437.747" x2="-51.308" y2="-438.404" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.928" y1="-437.747" x2="-57.428" y2="-437.747" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.928" y1="-437.747" x2="-57.928" y2="-437.747" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.564" y1="-485.902" x2="-70.1045" y2="-474.214" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.564" y1="-494.03" x2="-67.564" y2="-485.902" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.564" y1="-502.158" x2="-67.564" y2="-494.03" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.592" y1="-507.7455" x2="-67.564" y2="-502.158" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.1045" y1="-508.258" x2="-69.592" y2="-507.7455" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.1045" y1="-508.758" x2="-70.1045" y2="-508.258" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.48" y1="-414.274" x2="-51.308" y2="-438.404" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.594" y1="-376.936" x2="-30.48" y2="-414.274" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.674" y1="-376.936" x2="-53.594" y2="-376.936" width="0" layer="19" extent="1-1"/>
@@ -2733,9 +2868,8 @@ W = angled&lt;p&gt;
 <wire x1="1.612" y1="-97.282" x2="-6.645" y2="-97.753" width="0" layer="19" extent="1-1"/>
 <wire x1="4.39" y1="-97.282" x2="1.612" y2="-97.282" width="0" layer="19" extent="1-1"/>
 <wire x1="7.184" y1="-97.282" x2="4.39" y2="-97.282" width="0" layer="19" extent="1-1"/>
-<wire x1="6.23" y1="-59.116" x2="7.184" y2="-97.282" width="0" layer="19" extent="1-1"/>
-<wire x1="28.956" y1="2.286" x2="6.23" y2="-59.116" width="0" layer="19" extent="1-1"/>
-<wire x1="29.718" y1="2.54" x2="28.956" y2="2.286" width="0" layer="19" extent="1-1"/>
+<wire x1="31.544" y1="1.56" x2="7.184" y2="-97.282" width="0" layer="19" extent="1-1"/>
+<wire x1="28.956" y1="2.286" x2="29.718" y2="2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="37.544" y1="1.56" x2="31.544" y2="1.56" width="0" layer="19" extent="1-1"/>
 <wire x1="27.94" y1="10.668" x2="28.702" y2="3.722" width="0" layer="19" extent="1-1"/>
 <wire x1="32.004" y1="12.7" x2="27.852" y2="11.811" width="0" layer="19" extent="1-1"/>
@@ -3130,27 +3264,27 @@ W = angled&lt;p&gt;
 <wire x1="-60.718" y1="-282.206" x2="-60.718" y2="-288.706" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.358" y1="-286.206" x2="-41.288" y2="-293.636" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.788" y1="-272.276" x2="-60.718" y2="-282.206" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.788" y1="-265.95" x2="-58.788" y2="-272.276" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-261.02" x2="-57.788" y2="-265.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.042" y1="-264.934" x2="-58.788" y2="-272.276" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-260.004" x2="-58.042" y2="-264.934" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.288" y1="-272.276" x2="-58.788" y2="-272.276" width="0" layer="19" extent="1-1"/>
 <wire x1="-47.288" y1="-272.276" x2="-52.288" y2="-272.276" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.288" y1="-265.95" x2="-52.288" y2="-272.276" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.288" y1="-265.95" x2="-51.288" y2="-265.95" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.288" y1="-265.95" x2="-46.288" y2="-265.95" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-254.52" x2="-60.718" y2="-261.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-258.52" x2="-41.288" y2="-265.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.542" y1="-264.934" x2="-52.288" y2="-272.276" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.542" y1="-264.934" x2="-51.542" y2="-264.934" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.542" y1="-264.934" x2="-46.542" y2="-264.934" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-253.504" x2="-60.972" y2="-260.004" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.612" y1="-257.504" x2="-41.542" y2="-264.934" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.358" y1="-274.206" x2="-47.288" y2="-272.276" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.788" y1="-244.59" x2="-60.718" y2="-254.52" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.788" y1="-238.264" x2="-58.788" y2="-244.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.042" y1="-243.574" x2="-60.972" y2="-253.504" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.788" y1="-238.264" x2="-59.042" y2="-243.574" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.718" y1="-233.334" x2="-57.788" y2="-238.264" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.288" y1="-244.59" x2="-58.788" y2="-244.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-47.288" y1="-244.59" x2="-52.288" y2="-244.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.288" y1="-238.264" x2="-52.288" y2="-244.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.542" y1="-243.574" x2="-59.042" y2="-243.574" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.542" y1="-243.574" x2="-52.542" y2="-243.574" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.288" y1="-238.264" x2="-52.542" y2="-243.574" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.288" y1="-238.264" x2="-51.288" y2="-238.264" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.288" y1="-238.264" x2="-46.288" y2="-238.264" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.718" y1="-226.834" x2="-60.718" y2="-233.334" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.358" y1="-230.834" x2="-41.288" y2="-238.264" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-246.52" x2="-47.288" y2="-244.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.612" y1="-245.504" x2="-47.542" y2="-243.574" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.788" y1="-216.904" x2="-60.718" y2="-226.834" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.288" y1="-216.904" x2="-58.788" y2="-216.904" width="0" layer="19" extent="1-1"/>
 <wire x1="-47.288" y1="-216.904" x2="-52.288" y2="-216.904" width="0" layer="19" extent="1-1"/>
@@ -3161,7 +3295,7 @@ W = angled&lt;p&gt;
 <contactref element="R4" pad="1"/>
 <contactref element="U7" pad="10"/>
 <wire x1="-8.595" y1="-119.597" x2="-13.534" y2="-122.682" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-251.02" x2="-13.534" y2="-122.682" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-250.004" x2="-13.534" y2="-122.682" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="C1" pad="1"/>
@@ -3214,8 +3348,8 @@ W = angled&lt;p&gt;
 <contactref element="U7" pad="6"/>
 <contactref element="U8" pad="6"/>
 <wire x1="-60.718" y1="-221.334" x2="-60.718" y2="-193.648" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-249.02" x2="-60.718" y2="-221.334" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-276.706" x2="-60.718" y2="-249.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-248.004" x2="-60.718" y2="-221.334" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.718" y1="-276.706" x2="-60.972" y2="-248.004" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSS">
 <contactref element="U6" pad="107"/>
@@ -3252,15 +3386,15 @@ W = angled&lt;p&gt;
 <wire x1="-39.358" y1="-274.706" x2="-39.358" y2="-281.206" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.788" y1="-272.276" x2="-39.358" y2="-274.706" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.788" y1="-272.276" x2="-46.788" y2="-272.276" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.788" y1="-265.95" x2="-51.788" y2="-272.276" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.788" y1="-265.95" x2="-51.788" y2="-265.95" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.288" y1="-265.95" x2="-51.788" y2="-265.95" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-259.02" x2="-46.788" y2="-265.95" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-253.52" x2="-39.358" y2="-259.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-247.02" x2="-39.358" y2="-253.52" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.788" y1="-244.59" x2="-39.358" y2="-247.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.788" y1="-244.59" x2="-46.788" y2="-244.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.788" y1="-238.264" x2="-51.788" y2="-244.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.042" y1="-264.934" x2="-51.788" y2="-272.276" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.042" y1="-264.934" x2="-52.042" y2="-264.934" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.542" y1="-264.934" x2="-52.042" y2="-264.934" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.612" y1="-258.004" x2="-47.042" y2="-264.934" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.612" y1="-252.504" x2="-39.612" y2="-258.004" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.612" y1="-246.004" x2="-39.612" y2="-252.504" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.042" y1="-243.574" x2="-39.612" y2="-246.004" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.042" y1="-243.574" x2="-47.042" y2="-243.574" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.788" y1="-238.264" x2="-52.042" y2="-243.574" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.788" y1="-238.264" x2="-51.788" y2="-238.264" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.288" y1="-238.264" x2="-51.788" y2="-238.264" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.358" y1="-231.334" x2="-46.788" y2="-238.264" width="0" layer="19" extent="1-1"/>
@@ -3269,7 +3403,7 @@ W = angled&lt;p&gt;
 <wire x1="-46.788" y1="-216.904" x2="-39.358" y2="-219.334" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.788" y1="-216.904" x2="-46.788" y2="-216.904" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.718" y1="-281.706" x2="-58.288" y2="-293.636" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-254.02" x2="-58.288" y2="-265.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-253.004" x2="-58.542" y2="-264.934" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.718" y1="-226.334" x2="-58.288" y2="-238.264" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VSSA">
@@ -3277,8 +3411,8 @@ W = angled&lt;p&gt;
 <contactref element="U6" pad="31"/>
 <contactref element="U7" pad="31"/>
 <contactref element="U8" pad="31"/>
-<wire x1="-60.718" y1="-261.52" x2="-60.718" y2="-289.206" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-233.834" x2="-60.718" y2="-261.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-260.504" x2="-60.718" y2="-289.206" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.718" y1="-233.834" x2="-60.972" y2="-260.504" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.718" y1="-206.148" x2="-60.718" y2="-233.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREF+">
@@ -3286,8 +3420,8 @@ W = angled&lt;p&gt;
 <contactref element="U6" pad="32"/>
 <contactref element="U7" pad="32"/>
 <contactref element="U8" pad="32"/>
-<wire x1="-60.718" y1="-262.02" x2="-60.718" y2="-289.706" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-234.334" x2="-60.718" y2="-262.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-261.004" x2="-60.718" y2="-289.706" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.718" y1="-234.334" x2="-60.972" y2="-261.004" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.718" y1="-206.648" x2="-60.718" y2="-234.334" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDDA">
@@ -3295,8 +3429,8 @@ W = angled&lt;p&gt;
 <contactref element="U6" pad="33"/>
 <contactref element="U7" pad="33"/>
 <contactref element="U8" pad="33"/>
-<wire x1="-60.718" y1="-262.52" x2="-60.718" y2="-290.206" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-234.834" x2="-60.718" y2="-262.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-261.504" x2="-60.718" y2="-290.206" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.718" y1="-234.834" x2="-60.972" y2="-261.504" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.718" y1="-207.148" x2="-60.718" y2="-234.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCAP">
@@ -3311,9 +3445,9 @@ W = angled&lt;p&gt;
 <wire x1="-39.358" y1="-219.834" x2="-41.788" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.358" y1="-192.148" x2="-41.788" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.788" y1="-238.264" x2="-39.358" y2="-219.834" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-247.52" x2="-41.788" y2="-238.264" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.788" y1="-265.95" x2="-39.358" y2="-247.52" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-275.206" x2="-41.788" y2="-265.95" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.612" y1="-246.504" x2="-41.788" y2="-238.264" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.042" y1="-264.934" x2="-39.612" y2="-246.504" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.358" y1="-275.206" x2="-42.042" y2="-264.934" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.788" y1="-293.636" x2="-39.358" y2="-275.206" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD33USB">
@@ -3322,8 +3456,8 @@ W = angled&lt;p&gt;
 <contactref element="U7" pad="95"/>
 <contactref element="U8" pad="95"/>
 <wire x1="-39.358" y1="-225.334" x2="-39.358" y2="-197.648" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-253.02" x2="-39.358" y2="-225.334" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.358" y1="-280.706" x2="-39.358" y2="-253.02" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.612" y1="-252.004" x2="-39.358" y2="-225.334" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.358" y1="-280.706" x2="-39.612" y2="-252.004" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI1_SCK">
 <contactref element="U5" pad="41"/>
@@ -3353,43 +3487,67 @@ W = angled&lt;p&gt;
 <contactref element="BAROMETER1" pad="3"/>
 <contactref element="R12" pad="1"/>
 <wire x1="-7.945" y1="-119.597" x2="-10.994" y2="-122.682" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.718" y1="-251.52" x2="-10.994" y2="-122.682" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.972" y1="-250.504" x2="-10.994" y2="-122.682" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4_SCK">
 <contactref element="U6" pad="1"/>
+<contactref element="U9" pad="1"/>
+<wire x1="-65.7865" y1="-467.88" x2="-60.718" y2="-218.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4_MISO">
 <contactref element="U6" pad="4"/>
+<contactref element="U9" pad="11"/>
+<wire x1="-64.774" y1="-467.8675" x2="-60.718" y2="-220.334" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4_MOSI">
 <contactref element="U6" pad="5"/>
+<contactref element="U9" pad="9"/>
+<wire x1="-64.2615" y1="-468.38" x2="-60.718" y2="-220.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4_CS">
 <contactref element="U6" pad="3"/>
+<contactref element="U9" pad="10"/>
+<wire x1="-64.2615" y1="-467.88" x2="-60.718" y2="-219.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_CS">
 <contactref element="U7" pad="18"/>
+<contactref element="U11" pad="10"/>
+<wire x1="-68.5795" y1="-473.214" x2="-60.972" y2="-254.004" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_SCK">
 <contactref element="U7" pad="19"/>
+<contactref element="U11" pad="1"/>
+<wire x1="-70.1045" y1="-473.214" x2="-60.972" y2="-254.504" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_MISO">
 <contactref element="U7" pad="20"/>
+<contactref element="U11" pad="11"/>
+<wire x1="-69.092" y1="-473.2015" x2="-60.972" y2="-255.004" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_MOSI">
 <contactref element="U7" pad="21"/>
+<contactref element="U11" pad="9"/>
+<wire x1="-68.5795" y1="-473.714" x2="-60.972" y2="-255.504" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_SCK">
 <contactref element="U7" pad="128"/>
+<contactref element="U10" pad="1"/>
+<wire x1="-51.042" y1="-243.574" x2="-70.1045" y2="-507.758" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_MISO">
 <contactref element="U7" pad="127"/>
+<contactref element="U10" pad="11"/>
+<wire x1="-50.542" y1="-243.574" x2="-69.092" y2="-507.7455" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_MOSI">
 <contactref element="U7" pad="129"/>
+<contactref element="U10" pad="9"/>
+<wire x1="-51.542" y1="-243.574" x2="-68.5795" y2="-508.258" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_CS">
 <contactref element="U7" pad="93"/>
+<contactref element="U10" pad="10"/>
+<wire x1="-39.612" y1="-253.004" x2="-68.5795" y2="-507.758" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C4_SCL">
 <contactref element="U6" pad="81"/>
@@ -3550,6 +3708,21 @@ W = angled&lt;p&gt;
 </signal>
 <signal name="CSB_GYRO3">
 <contactref element="U2" pad="5"/>
+</signal>
+<signal name="N$4">
+<contactref element="U9" pad="4"/>
+<contactref element="C34" pad="1"/>
+<wire x1="-65.7865" y1="-469.38" x2="-70.104" y2="-485.902" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="U11" pad="4"/>
+<contactref element="C35" pad="1"/>
+<wire x1="-70.1045" y1="-474.714" x2="-70.104" y2="-494.03" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11">
+<contactref element="U10" pad="4"/>
+<contactref element="C36" pad="1"/>
+<wire x1="-70.104" y1="-502.158" x2="-70.1045" y2="-509.258" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

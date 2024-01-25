@@ -1598,6 +1598,48 @@ W = angled&lt;p&gt;
 </package3d>
 </packages3d>
 </library>
+<library name="LIS3MDLTR">
+<packages>
+<package name="XDCR_LIS3MDLTR">
+<wire x1="-1.075" y1="1.075" x2="-1.075" y2="-1.075" width="0.127" layer="51"/>
+<wire x1="-1.075" y1="-1.075" x2="1.075" y2="-1.075" width="0.127" layer="51"/>
+<wire x1="1.075" y1="-1.075" x2="1.075" y2="1.075" width="0.127" layer="51"/>
+<wire x1="1.075" y1="1.075" x2="-1.075" y2="1.075" width="0.127" layer="51"/>
+<wire x1="-1.325" y1="1.325" x2="-1.325" y2="-1.325" width="0.05" layer="39"/>
+<wire x1="-1.325" y1="-1.325" x2="1.325" y2="-1.325" width="0.05" layer="39"/>
+<wire x1="1.325" y1="-1.325" x2="1.325" y2="1.325" width="0.05" layer="39"/>
+<wire x1="1.325" y1="1.325" x2="-1.325" y2="1.325" width="0.05" layer="39"/>
+<text x="-1.47743125" y="1.427409375" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.378290625" y="-2.1328" size="0.6096" layer="27">&gt;VALUE</text>
+<circle x="-1.56" y="0.82" radius="0.1" width="0.2" layer="51"/>
+<circle x="-1.56" y="0.82" radius="0.1" width="0.2" layer="21"/>
+<rectangle x1="0.525" y1="0.525" x2="1" y2="0.975" layer="29"/>
+<rectangle x1="-1" y1="0.525" x2="-0.525" y2="0.975" layer="29"/>
+<rectangle x1="-1" y1="0.025" x2="-0.525" y2="0.475" layer="29"/>
+<rectangle x1="-1" y1="-0.475" x2="-0.525" y2="-0.025" layer="29"/>
+<rectangle x1="-1" y1="-0.975" x2="-0.525" y2="-0.525" layer="29"/>
+<rectangle x1="0.525" y1="0.025" x2="1" y2="0.475" layer="29"/>
+<rectangle x1="0.525" y1="-0.475" x2="1" y2="-0.025" layer="29"/>
+<rectangle x1="0.525" y1="-0.975" x2="1" y2="-0.525" layer="29"/>
+<rectangle x1="-0.475" y1="-1" x2="-0.025" y2="-0.525" layer="29"/>
+<rectangle x1="-0.475" y1="0.525" x2="-0.025" y2="1" layer="29"/>
+<rectangle x1="0.025" y1="0.525" x2="0.475" y2="1" layer="29"/>
+<rectangle x1="0.025" y1="-1" x2="0.475" y2="-0.525" layer="29"/>
+<smd name="1" x="-0.7625" y="0.75" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="2" x="-0.7625" y="0.25" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="3" x="-0.7625" y="-0.25" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="4" x="-0.7625" y="-0.75" dx="0.375" dy="0.35" layer="1" stop="no"/>
+<smd name="5" x="-0.25" y="-0.7625" dx="0.375" dy="0.35" layer="1" rot="R90" stop="no"/>
+<smd name="6" x="0.25" y="-0.7625" dx="0.375" dy="0.35" layer="1" rot="R90" stop="no"/>
+<smd name="7" x="0.7625" y="-0.75" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="8" x="0.7625" y="-0.25" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="9" x="0.7625" y="0.25" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="0.7625" y="0.75" dx="0.375" dy="0.35" layer="1" rot="R180" stop="no"/>
+<smd name="11" x="0.25" y="0.7625" dx="0.375" dy="0.35" layer="1" rot="R270" stop="no"/>
+<smd name="12" x="-0.25" y="0.7625" dx="0.375" dy="0.35" layer="1" rot="R270" stop="no"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2348,6 +2390,45 @@ W = angled&lt;p&gt;
 <attribute name="PROD_ID" value="RES-08609" x="-60.706" y="-469.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-60.96" y="-470.662" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
+<element name="U9" library="LIS3MDLTR" package="XDCR_LIS3MDLTR" value="LIS3MDLTR" x="-65.024" y="-468.63" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=eda" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2) " x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="LIS3MDLTR" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-66.50143125" y="-467.202590625" size="0.6096" layer="25"/>
+<attribute name="PACKAGE" value="VFLGA-12 STMicroelectronics" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=382740&amp;manufacturer=STMicroelectronics&amp;part_name=LIS3MDLTR&amp;search_term=None" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=snap" x="-65.024" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-66.402290625" y="-470.7628" size="0.6096" layer="27"/>
+</element>
+<element name="U11" library="LIS3MDLTR" package="XDCR_LIS3MDLTR" value="LIS3MDLTR" x="-69.342" y="-473.964" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=eda" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2) " x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="LIS3MDLTR" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-70.81943125" y="-472.536590625" size="0.6096" layer="25"/>
+<attribute name="PACKAGE" value="VFLGA-12 STMicroelectronics" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=382740&amp;manufacturer=STMicroelectronics&amp;part_name=LIS3MDLTR&amp;search_term=None" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=snap" x="-73.66" y="-468.63" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.720290625" y="-476.0968" size="0.6096" layer="27"/>
+</element>
+<element name="U10" library="LIS3MDLTR" package="XDCR_LIS3MDLTR" value="LIS3MDLTR" x="-69.342" y="-479.044" smashed="yes">
+<attribute name="AVAILABILITY" value="In Stock" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=eda" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value=" Magnetoresistive Sensor X, Y, Z Axis 12-LGA (2x2) " x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="STMicroelectronics" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="LIS3MDLTR" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-70.81943125" y="-477.616590625" size="0.6096" layer="25"/>
+<attribute name="PACKAGE" value="VFLGA-12 STMicroelectronics" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="None" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=382740&amp;manufacturer=STMicroelectronics&amp;part_name=LIS3MDLTR&amp;search_term=None" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/LIS3MDLTR/STMicroelectronics/view-part/?ref=snap" x="-73.66" y="-473.964" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-70.720290625" y="-481.1768" size="0.6096" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="3V3">
@@ -2470,6 +2551,14 @@ W = angled&lt;p&gt;
 <contactref element="L2" pad="2"/>
 <contactref element="L7" pad="2"/>
 <contactref element="L3" pad="2"/>
+<contactref element="IC2" pad="1"/>
+<contactref element="IC2" pad="2"/>
+<contactref element="U9" pad="5"/>
+<contactref element="U9" pad="6"/>
+<contactref element="U11" pad="5"/>
+<contactref element="U11" pad="6"/>
+<contactref element="U10" pad="5"/>
+<contactref element="U10" pad="6"/>
 <wire x1="-46.288" y1="-210.578" x2="-41.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.288" y1="-210.578" x2="-46.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.788" y1="-210.578" x2="-51.288" y2="-210.578" width="0" layer="19" extent="1-1"/>
@@ -2516,6 +2605,14 @@ W = angled&lt;p&gt;
 <wire x1="65.786" y1="27.178" x2="48.768" y2="26.162" width="0" layer="19" extent="1-1"/>
 <wire x1="-60.11" y1="-407.67" x2="-57.788" y2="-210.578" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.81" y1="-410.972" x2="-60.11" y2="-407.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.42" y1="-429.514" x2="-61.81" y2="-410.972" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.88" y1="-429.514" x2="-58.42" y2="-429.514" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.774" y1="-469.3925" x2="-58.42" y2="-429.514" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.274" y1="-469.3925" x2="-64.774" y2="-469.3925" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.092" y1="-474.7265" x2="-65.274" y2="-469.3925" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.592" y1="-474.7265" x2="-69.092" y2="-474.7265" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.592" y1="-479.8065" x2="-69.592" y2="-474.7265" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.092" y1="-479.8065" x2="-69.592" y2="-479.8065" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="AIRSPEED" pad="1"/>
@@ -2686,6 +2783,9 @@ W = angled&lt;p&gt;
 <contactref element="C31" pad="2"/>
 <contactref element="C32" pad="2"/>
 <contactref element="C33" pad="2"/>
+<contactref element="U9" pad="3"/>
+<contactref element="U11" pad="3"/>
+<contactref element="U10" pad="3"/>
 <wire x1="-57.428" y1="-454.511" x2="-51.308" y2="-455.422" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.928" y1="-454.511" x2="-57.428" y2="-454.511" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.928" y1="-454.511" x2="-57.928" y2="-454.511" width="0" layer="19" extent="1-1"/>
@@ -2697,6 +2797,9 @@ W = angled&lt;p&gt;
 <wire x1="-57.428" y1="-437.747" x2="-51.308" y2="-438.404" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.928" y1="-437.747" x2="-57.428" y2="-437.747" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.928" y1="-437.747" x2="-57.928" y2="-437.747" width="0" layer="19" extent="1-1"/>
+<wire x1="-65.7865" y1="-468.88" x2="-58.674" y2="-463.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.1045" y1="-474.214" x2="-65.7865" y2="-468.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.1045" y1="-479.294" x2="-70.1045" y2="-474.214" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.48" y1="-414.274" x2="-51.308" y2="-438.404" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.594" y1="-376.936" x2="-30.48" y2="-414.274" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.674" y1="-376.936" x2="-53.594" y2="-376.936" width="0" layer="19" extent="1-1"/>
@@ -2883,6 +2986,8 @@ W = angled&lt;p&gt;
 <wire x1="68.326" y1="37.338" x2="65.278" y2="37.338" width="0.2032" layer="1"/>
 <wire x1="65.278" y1="37.338" x2="62.992" y2="35.052" width="0.2032" layer="1"/>
 <wire x1="62.738" y1="35.052" x2="62.992" y2="35.052" width="0.2032" layer="1"/>
+<contactref element="U6" pad="115"/>
+<wire x1="-44.288" y1="-216.904" x2="31.317" y2="23.189" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_DN">
 <contactref element="USB_COMM_MODE_FILTER" pad="7"/>
@@ -3057,15 +3162,23 @@ W = angled&lt;p&gt;
 </signal>
 <signal name="GPIO_EXTI2">
 <contactref element="R16" pad="1"/>
+<contactref element="U6" pad="116"/>
+<wire x1="-44.788" y1="-216.904" x2="-3.12" y2="-26.416" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO_EXTI4">
 <contactref element="R18" pad="1"/>
+<contactref element="U6" pad="118"/>
+<wire x1="-45.788" y1="-216.904" x2="-3.12" y2="-29.718" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO_EXTI0">
 <contactref element="R14" pad="1"/>
+<contactref element="U6" pad="114"/>
+<wire x1="-43.788" y1="-216.904" x2="-5.66" y2="-26.416" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO_EXTI3">
 <contactref element="R17" pad="1"/>
+<contactref element="U6" pad="117"/>
+<wire x1="-45.288" y1="-216.904" x2="-5.66" y2="-29.718" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC_IN">
 <contactref element="R11" pad="2"/>
@@ -3343,39 +3456,63 @@ W = angled&lt;p&gt;
 </signal>
 <signal name="SPI4_SCK">
 <contactref element="U6" pad="1"/>
+<contactref element="U9" pad="1"/>
+<wire x1="-65.7865" y1="-467.88" x2="-60.718" y2="-218.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4_MISO">
 <contactref element="U6" pad="4"/>
+<contactref element="U9" pad="11"/>
+<wire x1="-64.774" y1="-467.8675" x2="-60.718" y2="-220.334" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4_MOSI">
 <contactref element="U6" pad="5"/>
+<contactref element="U9" pad="9"/>
+<wire x1="-64.2615" y1="-468.38" x2="-60.718" y2="-220.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI4_CS">
 <contactref element="U6" pad="3"/>
+<contactref element="U9" pad="10"/>
+<wire x1="-64.2615" y1="-467.88" x2="-60.718" y2="-219.834" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_CS">
 <contactref element="U7" pad="18"/>
+<contactref element="U11" pad="10"/>
+<wire x1="-68.5795" y1="-473.214" x2="-60.718" y2="-255.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_SCK">
 <contactref element="U7" pad="19"/>
+<contactref element="U11" pad="1"/>
+<wire x1="-70.1045" y1="-473.214" x2="-60.718" y2="-255.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_MISO">
 <contactref element="U7" pad="20"/>
+<contactref element="U11" pad="11"/>
+<wire x1="-69.092" y1="-473.2015" x2="-60.718" y2="-256.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI5_MOSI">
 <contactref element="U7" pad="21"/>
+<contactref element="U11" pad="9"/>
+<wire x1="-68.5795" y1="-473.714" x2="-60.718" y2="-256.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_SCK">
 <contactref element="U7" pad="128"/>
+<contactref element="U10" pad="1"/>
+<wire x1="-70.1045" y1="-478.294" x2="-50.788" y2="-244.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_MISO">
 <contactref element="U7" pad="127"/>
+<contactref element="U10" pad="11"/>
+<wire x1="-69.092" y1="-478.2815" x2="-50.288" y2="-244.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_MOSI">
 <contactref element="U7" pad="129"/>
+<contactref element="U10" pad="9"/>
+<wire x1="-68.5795" y1="-478.794" x2="-51.288" y2="-244.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI6_CS">
 <contactref element="U7" pad="93"/>
+<contactref element="U10" pad="10"/>
+<wire x1="-68.5795" y1="-478.294" x2="-39.358" y2="-254.02" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C4_SCL">
 <contactref element="U6" pad="81"/>
@@ -3492,17 +3629,6 @@ W = angled&lt;p&gt;
 </signal>
 <signal name="SWDIO_O1">
 <contactref element="JP7" pad="5"/>
-</signal>
-<signal name="3V1">
-<contactref element="IC2" pad="2"/>
-<contactref element="IC2" pad="1"/>
-<wire x1="-55.88" y1="-429.514" x2="-58.42" y2="-429.514" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$4">
-<contactref element="IC2" pad="24"/>
-</signal>
-<signal name="N$7">
-<contactref element="IC2" pad="23"/>
 </signal>
 <signal name="3V2">
 <contactref element="C28" pad="1"/>
