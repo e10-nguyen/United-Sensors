@@ -66,8 +66,8 @@ all: main-build
 main-build: IMU_imp.elf secondary-outputs
 
 # Tool invocations
-IMU_imp.elf IMU_imp.map: $(OBJS) $(USER_OBJS) C:\Users\astra\STM32CubeIDE\workspace_1.13.2\IMU_imp\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "IMU_imp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\astra\STM32CubeIDE\workspace_1.13.2\IMU_imp\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_imp.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+IMU_imp.elf IMU_imp.map: $(OBJS) $(USER_OBJS) C:\Users\blaze\Documents\United-Sensors\IMU_imp\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "IMU_imp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\blaze\Documents\United-Sensors\IMU_imp\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="IMU_imp.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
