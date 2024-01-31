@@ -1176,101 +1176,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="4525DO-DS5AI001DP">
-<description>&lt;Differential Pressure Sensor 1PSI Dual Barbs&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="4525DO-DS...P">
-<description>&lt;b&gt;4525DO-DS...P&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="1.1" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="2" x="3.6" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="3" x="6.1" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="4" x="8.6" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="5" x="8.6" y="4.4" drill="0.78" diameter="1.28"/>
-<pad name="6" x="6.1" y="4.4" drill="0.78" diameter="1.28"/>
-<pad name="7" x="3.6" y="4.4" drill="0.78" diameter="1.28"/>
-<pad name="8" x="1.1" y="4.4" drill="0.78" diameter="1.28"/>
-<text x="1.329" y="-1.785" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="1.329" y="-1.785" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="0" y1="4.25" x2="9.9" y2="4.25" width="0.2" layer="51"/>
-<wire x1="9.9" y1="4.25" x2="9.9" y2="-8.15" width="0.2" layer="51"/>
-<wire x1="9.9" y1="-8.15" x2="0" y2="-8.15" width="0.2" layer="51"/>
-<wire x1="0" y1="-8.15" x2="0" y2="4.25" width="0.2" layer="51"/>
-<wire x1="0" y1="1.75" x2="-7.5" y2="1.75" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="1.75" x2="-7.5" y2="-1.75" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="-1.75" x2="0" y2="-1.75" width="0.2" layer="51"/>
-<wire x1="0" y1="-2.15" x2="-7.5" y2="-2.15" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="-2.15" x2="-7.5" y2="-5.65" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="-5.65" x2="0" y2="-5.65" width="0.2" layer="51"/>
-<wire x1="0" y1="4.25" x2="0" y2="1.75" width="0.2" layer="21"/>
-<wire x1="0" y1="1.75" x2="-7.5" y2="1.75" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="1.75" x2="-7.5" y2="-1.75" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="-1.75" x2="0" y2="-1.75" width="0.2" layer="21"/>
-<wire x1="0" y1="-1.75" x2="0" y2="-2.15" width="0.2" layer="21"/>
-<wire x1="0" y1="-2.15" x2="-7.5" y2="-2.15" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="-2.15" x2="-7.5" y2="-5.65" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="-5.65" x2="0" y2="-5.65" width="0.2" layer="21"/>
-<wire x1="0" y1="-5.65" x2="0" y2="-8.15" width="0.2" layer="21"/>
-<wire x1="9.9" y1="4.25" x2="9.9" y2="-8.15" width="0.2" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="4525DO-DS5AI001DP">
-<wire x1="5.08" y1="2.54" x2="66.04" y2="2.54" width="0.254" layer="94"/>
-<wire x1="66.04" y1="-10.16" x2="66.04" y2="2.54" width="0.254" layer="94"/>
-<wire x1="66.04" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<text x="67.31" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="67.31" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="GROUND" x="0" y="0" length="middle" direction="pwr"/>
-<pin name="VCC" x="0" y="-2.54" length="middle" direction="pwr"/>
-<pin name="SDA_(I2C)_/_MISO_(SPI)" x="0" y="-5.08" length="middle"/>
-<pin name="SCL_(I2C)_/_SCLK_(SPI)" x="0" y="-7.62" length="middle"/>
-<pin name="INT_(I2C)_/_SS_(SPI)" x="71.12" y="-7.62" length="middle" rot="R180"/>
-<pin name="NC_1" x="71.12" y="-5.08" length="middle" rot="R180"/>
-<pin name="NC_2" x="71.12" y="-2.54" length="middle" rot="R180"/>
-<pin name="NC_3" x="71.12" y="0" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="4525DO-DS5AI001DP" prefix="U">
-<description>&lt;b&gt;Differential Pressure Sensor 1PSI Dual Barbs&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=MS4525DO&amp;DocType=DS&amp;DocLang=English"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="4525DO-DS5AI001DP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="4525DO-DS...P">
-<connects>
-<connect gate="G$1" pin="GROUND" pad="1"/>
-<connect gate="G$1" pin="INT_(I2C)_/_SS_(SPI)" pad="5"/>
-<connect gate="G$1" pin="NC_1" pad="6"/>
-<connect gate="G$1" pin="NC_2" pad="7"/>
-<connect gate="G$1" pin="NC_3" pad="8"/>
-<connect gate="G$1" pin="SCL_(I2C)_/_SCLK_(SPI)" pad="4"/>
-<connect gate="G$1" pin="SDA_(I2C)_/_MISO_(SPI)" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="4525DO-DS5AI001DP" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/4525do-ds5ai001dp/te-connectivity" constant="no"/>
-<attribute name="DESCRIPTION" value="Differential Pressure Sensor 1PSI Dual Barbs" constant="no"/>
-<attribute name="HEIGHT" value="mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="4525DO-DS5AI001DP" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="824-4525DODS5AI001DP" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Measurement-Specialties/4525DO-DS5AI001DP?qs=oFx6pF86PmDUpUCTX7loEA%3D%3D" constant="no"/>
-<attribute name="MOUSER_TESTING_PART_NUMBER" value="" constant="no"/>
-<attribute name="MOUSER_TESTING_PRICE-STOCK" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="ce-capstone">
 <packages>
 <package name="SON95P300X300X100-7N">
@@ -1354,6 +1259,20 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <wire x1="-3.8" y1="1.2" x2="-3.8" y2="1" width="0.2" layer="21" curve="180"/>
 <wire x1="-3.8" y1="1" x2="-3.8" y2="1" width="0.2" layer="21"/>
 <wire x1="-3.8" y1="1" x2="-3.8" y2="1.2" width="0.2" layer="21" curve="180"/>
+</package>
+<package name="RESC1005X35N">
+<text x="-0.96" y="-0.63" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-0.96" y="0.63" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="0.55" y1="-0.28" x2="-0.55" y2="-0.28" width="0.127" layer="51"/>
+<wire x1="0.55" y1="0.28" x2="-0.55" y2="0.28" width="0.127" layer="51"/>
+<wire x1="0.55" y1="-0.28" x2="0.55" y2="0.28" width="0.127" layer="51"/>
+<wire x1="-0.55" y1="-0.28" x2="-0.55" y2="0.28" width="0.127" layer="51"/>
+<wire x1="-0.965" y1="-0.55" x2="0.965" y2="-0.55" width="0.05" layer="39"/>
+<wire x1="-0.965" y1="0.55" x2="0.965" y2="0.55" width="0.05" layer="39"/>
+<wire x1="-0.965" y1="-0.55" x2="-0.965" y2="0.55" width="0.05" layer="39"/>
+<wire x1="0.965" y1="-0.55" x2="0.965" y2="0.55" width="0.05" layer="39"/>
+<smd name="1" x="-0.435" y="0" dx="0.56" dy="0.6" layer="1"/>
+<smd name="2" x="0.435" y="0" dx="0.56" dy="0.6" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1440,6 +1359,21 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <pin name="2" x="-10.16" y="-2.54" visible="pad" length="middle" direction="pas"/>
 <pin name="3" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="4" x="10.16" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1532,6 +1466,30 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/LL3301FF065QJ
 <attribute name="MANUFACTURER_PART_NUMBER" value="LL3301FF065QJ" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="612-LL3301FF065QJ" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=612-LL3301FF065QJ" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RT0402FRE07220RL" prefix="R">
+<description>RES SMD 4.7K OHM 1% 1/16W 0402</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESC1005X35N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" 4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 _1005 Metric_ Thin Film "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="YAG3347CT-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/yageo/RT0402FRE074K7L/YAG3347CT-ND/5418052?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="MF" value="Yageo"/>
+<attribute name="MP" value="RT0402FRE074K7L"/>
+<attribute name="PACKAGE" value="1005 Yageo"/>
 </technology>
 </technologies>
 </device>
@@ -2117,30 +2075,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="4.7KOHM" urn="urn:adsk.eagle:component:39723/1" prefix="R" library_version="1">
-<description>&lt;h3&gt;4.7kΩ resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39650/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-07857"/>
-<attribute name="VALUE" value="4.7k"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="10KOHM" urn="urn:adsk.eagle:component:39764/1" prefix="R" library_version="1">
 <description>&lt;h3&gt;10kΩ resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
@@ -2403,6 +2337,30 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <technology name="">
 <attribute name="PROD_ID" value="RES-08609"/>
 <attribute name="VALUE" value="0"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4.7KOHM" urn="urn:adsk.eagle:component:39723/1" prefix="R" library_version="1">
+<description>&lt;h3&gt;4.7kΩ resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39650/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07857"/>
+<attribute name="VALUE" value="4.7k"/>
 </technology>
 </technologies>
 </device>
@@ -2964,77 +2922,6 @@ W = angled&lt;p&gt;
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SamacSys_Parts">
-<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="ECSTXO3225MV400TR">
-<description>&lt;b&gt;ECS-TXO-3225MV-400-TR-1&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-1.15" y="-0.95" dx="1.3" dy="1.1" layer="1"/>
-<smd name="2" x="1.15" y="-0.95" dx="1.3" dy="1.1" layer="1"/>
-<smd name="3" x="1.15" y="0.95" dx="1.3" dy="1.1" layer="1"/>
-<smd name="4" x="-1.15" y="0.95" dx="1.3" dy="1.1" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.1" layer="51"/>
-<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.1" layer="51"/>
-<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.1" layer="51"/>
-<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.1" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.1" layer="51"/>
-<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.5" width="0.1" layer="51"/>
-<wire x1="2.8" y1="-2.5" x2="-2.8" y2="-2.5" width="0.1" layer="51"/>
-<wire x1="-2.8" y1="-2.5" x2="-2.8" y2="2.5" width="0.1" layer="51"/>
-<wire x1="-1.15" y1="-2" x2="-1.15" y2="-2" width="0.1" layer="21"/>
-<wire x1="-1.15" y1="-2" x2="-1.15" y2="-1.9" width="0.1" layer="21" curve="180"/>
-<wire x1="-1.15" y1="-1.9" x2="-1.15" y2="-1.9" width="0.1" layer="21"/>
-<wire x1="-1.15" y1="-1.9" x2="-1.15" y2="-2" width="0.1" layer="21" curve="180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ECS-TXO-3225MV-400-TR">
-<wire x1="5.08" y1="2.54" x2="33.02" y2="2.54" width="0.254" layer="94"/>
-<wire x1="33.02" y1="-5.08" x2="33.02" y2="2.54" width="0.254" layer="94"/>
-<wire x1="33.02" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="34.29" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="34.29" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="TRI-STATE" x="0" y="-2.54" length="middle"/>
-<pin name="GROUND" x="38.1" y="-2.54" length="middle" rot="R180"/>
-<pin name="OUTPUT" x="38.1" y="0" length="middle" rot="R180"/>
-<pin name="VDD" x="0" y="0" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ECS-TXO-3225MV-400-TR" prefix="Y">
-<description>&lt;b&gt;TCXO Oscillators 40.000 MHZ Multi-Volt +1.7 3.6V HCMOS TCXO +/-2.5 ppm -30 +85 C 3.2x 2.5mm RoHS&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="ECS-TXO-3225MV-400-TR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ECSTXO3225MV400TR">
-<connects>
-<connect gate="G$1" pin="GROUND" pad="2"/>
-<connect gate="G$1" pin="OUTPUT" pad="3"/>
-<connect gate="G$1" pin="TRI-STATE" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="TCXO Oscillators 40.000 MHZ Multi-Volt +1.7 3.6V HCMOS TCXO +/-2.5 ppm -30 +85 C 3.2x 2.5mm RoHS" constant="no"/>
-<attribute name="HEIGHT" value="1.2mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="ECS" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="ECS-TXO-3225MV-400-TR" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6207,6 +6094,77 @@ naming: grid - package width</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SamacSys_Parts">
+<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="ECSTXO3225MV400TR">
+<description>&lt;b&gt;ECS-TXO-3225MV-400-TR-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.15" y="-0.95" dx="1.3" dy="1.1" layer="1"/>
+<smd name="2" x="1.15" y="-0.95" dx="1.3" dy="1.1" layer="1"/>
+<smd name="3" x="1.15" y="0.95" dx="1.3" dy="1.1" layer="1"/>
+<smd name="4" x="-1.15" y="0.95" dx="1.3" dy="1.1" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.1" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.1" layer="51"/>
+<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="2.8" y1="-2.5" x2="-2.8" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="-2.8" y1="-2.5" x2="-2.8" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-1.15" y1="-2" x2="-1.15" y2="-2" width="0.1" layer="21"/>
+<wire x1="-1.15" y1="-2" x2="-1.15" y2="-1.9" width="0.1" layer="21" curve="180"/>
+<wire x1="-1.15" y1="-1.9" x2="-1.15" y2="-1.9" width="0.1" layer="21"/>
+<wire x1="-1.15" y1="-1.9" x2="-1.15" y2="-2" width="0.1" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ECS-TXO-3225MV-400-TR">
+<wire x1="5.08" y1="2.54" x2="33.02" y2="2.54" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-5.08" x2="33.02" y2="2.54" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="34.29" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="34.29" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="TRI-STATE" x="0" y="-2.54" length="middle"/>
+<pin name="GROUND" x="38.1" y="-2.54" length="middle" rot="R180"/>
+<pin name="OUTPUT" x="38.1" y="0" length="middle" rot="R180"/>
+<pin name="VDD" x="0" y="0" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ECS-TXO-3225MV-400-TR" prefix="Y">
+<description>&lt;b&gt;TCXO Oscillators 40.000 MHZ Multi-Volt +1.7 3.6V HCMOS TCXO +/-2.5 ppm -30 +85 C 3.2x 2.5mm RoHS&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ECS-TXO-3225MV-400-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ECSTXO3225MV400TR">
+<connects>
+<connect gate="G$1" pin="GROUND" pad="2"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+<connect gate="G$1" pin="TRI-STATE" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="TCXO Oscillators 40.000 MHZ Multi-Volt +1.7 3.6V HCMOS TCXO +/-2.5 ppm -30 +85 C 3.2x 2.5mm RoHS" constant="no"/>
+<attribute name="HEIGHT" value="1.2mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="ECS" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ECS-TXO-3225MV-400-TR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6217,11 +6175,6 @@ naming: grid - package width</description>
 </class>
 </classes>
 <parts>
-<part name="AIRSPEED" library="4525DO-DS5AI001DP" deviceset="4525DO-DS5AI001DP" device=""/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402-6.3V-10%-X7R" value="0.1uF">
-<attribute name="SPICEPREFIX" value="C"/>
-</part>
-<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="POWER_MODULE" library="ce-capstone" deviceset="LD39050PU33R" device=""/>
 <part name="U$1" library="ce-capstone" deviceset="STPS1L30A" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402-6.3V-10%-X7R" value="0.1uF"/>
@@ -6242,8 +6195,6 @@ naming: grid - package width</description>
 <part name="C21" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="C22" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
-<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="JST_CONNECTION" library="B4B-XH-A_LF__SN_" deviceset="B4B-XH-A_LF__SN_" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
@@ -6261,9 +6212,6 @@ naming: grid - package width</description>
 <part name="R16" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="22OHM" device="-0402-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39657/1" value="22"/>
 <part name="R17" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="22OHM" device="-0402-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39657/1" value="22"/>
 <part name="R18" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="22OHM" device="-0402-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39657/1" value="22"/>
-<part name="Y1" library="SamacSys_Parts" deviceset="ECS-TXO-3225MV-400-TR" device=""/>
-<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="22OHM" device="-0402-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39657/1" value="22"/>
 <part name="BAROMETER" library="DPS310XTSA1" deviceset="DPS310XTSA1" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -6316,8 +6264,6 @@ naming: grid - package width</description>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C27" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/4" package3d_urn="urn:adsk.eagle:package:5408/1"/>
 <part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2"/>
-<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
-<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="IC2" library="ic-package" library_urn="urn:adsk.eagle:library:239" deviceset="DIL24" device="-6" package3d_urn="urn:adsk.eagle:package:1009/2"/>
 <part name="U2" library="BMI088" deviceset="BMI088" device=""/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -6346,23 +6292,23 @@ naming: grid - package width</description>
 <part name="C35" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/4" package3d_urn="urn:adsk.eagle:package:5408/1" value="0.1uF"/>
 <part name="U10" library="LIS3MDLTR" deviceset="LIS3MDLTR" device=""/>
 <part name="C36" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/4" package3d_urn="urn:adsk.eagle:package:5408/1" value="0.1uF"/>
+<part name="R6" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
+<part name="Y1" library="SamacSys_Parts" deviceset="ECS-TXO-3225MV-400-TR" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="22OHM" device="-0402-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39657/1" value="22"/>
+<part name="R7" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
+<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
+<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
+<part name="R19" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
+<part name="R20" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
+<part name="R21" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
+<part name="R22" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="AIRSPEED" gate="G$1" x="35.56" y="121.92" smashed="yes">
-<attribute name="NAME" x="41.91" y="129.54" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="41.91" y="127" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="C3" gate="G$1" x="17.78" y="119.38" smashed="yes">
-<attribute name="NAME" x="19.304" y="122.301" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="19.304" y="117.221" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="GND8" gate="1" x="10.16" y="121.92" smashed="yes">
-<attribute name="VALUE" x="7.62" y="119.38" size="1.778" layer="96"/>
-</instance>
 <instance part="POWER_MODULE" gate="G$1" x="266.7" y="236.22" smashed="yes">
 <attribute name="NAME" x="256.54" y="244.84" size="1.778" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="256.54" y="224.6" size="1.778" layer="96" ratio="10" rot="SR0"/>
@@ -6440,14 +6386,6 @@ naming: grid - package width</description>
 <instance part="GND21" gate="1" x="375.92" y="152.4" smashed="yes">
 <attribute name="VALUE" x="373.38" y="149.86" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="35.56" y="101.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.084" y="101.6" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="34.036" y="101.6" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
-<instance part="R7" gate="G$1" x="30.48" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.956" y="104.14" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="32.004" y="104.14" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
 <instance part="JST_CONNECTION" gate="G$1" x="292.1" y="205.74" smashed="yes">
 <attribute name="NAME" x="308.61" y="213.36" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="308.61" y="210.82" size="1.778" layer="96" align="center-left"/>
@@ -6510,17 +6448,6 @@ naming: grid - package width</description>
 <instance part="R18" gate="G$1" x="27.94" y="203.2" smashed="yes">
 <attribute name="NAME" x="27.94" y="204.724" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="27.94" y="201.676" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="Y1" gate="G$1" x="12.7" y="152.4" smashed="yes">
-<attribute name="NAME" x="46.99" y="160.02" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="46.99" y="157.48" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="GND22" gate="1" x="55.88" y="142.24" smashed="yes">
-<attribute name="VALUE" x="53.34" y="139.7" size="1.778" layer="96"/>
-</instance>
-<instance part="R11" gate="G$1" x="68.58" y="152.4" smashed="yes">
-<attribute name="NAME" x="68.58" y="153.924" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="68.58" y="150.876" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="BAROMETER" gate="G$1" x="33.02" y="73.66" smashed="yes">
 <attribute name="NAME" x="59.69" y="81.28" size="1.778" layer="95" align="center-left"/>
@@ -6701,14 +6628,6 @@ naming: grid - package width</description>
 <attribute name="NAME" x="344.17" y="117.475" size="1.778" layer="95"/>
 <attribute name="VALUE" x="344.17" y="104.14" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="G$1" x="160.02" y="134.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="158.496" y="134.62" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="161.544" y="134.62" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R9" gate="G$1" x="152.4" y="127" smashed="yes" rot="R270">
-<attribute name="NAME" x="153.924" y="127" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="150.876" y="127" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
 <instance part="IC2" gate="G$1" x="149.86" y="88.9" smashed="yes">
 <attribute name="NAME" x="145.415" y="106.045" size="1.778" layer="95"/>
 <attribute name="VALUE" x="145.415" y="72.39" size="1.778" layer="96"/>
@@ -6823,6 +6742,40 @@ naming: grid - package width</description>
 <attribute name="NAME" x="165.1" y="201.93" size="2.54" layer="95"/>
 <attribute name="VALUE" x="165.1" y="151.13" size="2.54" layer="96"/>
 </instance>
+<instance part="R6" gate="G$1" x="104.14" y="149.86" smashed="yes">
+<attribute name="NAME" x="102.87" y="146.2786" size="1.778" layer="95"/>
+</instance>
+<instance part="Y1" gate="G$1" x="2.54" y="149.86" smashed="yes">
+<attribute name="NAME" x="36.83" y="157.48" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="36.83" y="154.94" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="GND22" gate="1" x="45.72" y="139.7" smashed="yes">
+<attribute name="VALUE" x="43.18" y="137.16" size="1.778" layer="96"/>
+</instance>
+<instance part="R11" gate="G$1" x="58.42" y="149.86" smashed="yes">
+<attribute name="NAME" x="58.42" y="151.384" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="58.42" y="148.336" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="R7" gate="G$1" x="104.14" y="152.4" smashed="yes">
+<attribute name="NAME" x="102.87" y="153.8986" size="1.778" layer="95"/>
+</instance>
+<instance part="R8" gate="G$1" x="182.88" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="181.356" y="129.54" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="184.404" y="129.54" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="175.26" y="121.92" smashed="yes" rot="R270">
+<attribute name="NAME" x="176.784" y="121.92" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="173.736" y="121.92" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
+</instance>
+<instance part="R19" gate="G$1" x="147.32" y="149.86" smashed="yes">
+<attribute name="NAME" x="143.51" y="151.3586" size="1.778" layer="95"/>
+</instance>
+<instance part="R20" gate="G$1" x="147.32" y="147.32" smashed="yes"/>
+<instance part="R21" gate="G$1" x="147.32" y="144.78" smashed="yes"/>
+<instance part="R22" gate="G$1" x="200.66" y="134.62" smashed="yes">
+<attribute name="NAME" x="196.85" y="136.1186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="196.85" y="131.318" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6872,16 +6825,6 @@ naming: grid - package width</description>
 <pinref part="L1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="96.52" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
-<label x="35.56" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="99.06" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
-<label x="30.48" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="2"/>
 <pinref part="S1" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="200.66" x2="205.74" y2="205.74" width="0.1524" layer="91"/>
@@ -6899,18 +6842,6 @@ naming: grid - package width</description>
 <wire x1="129.54" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 <label x="124.46" y="93.98" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="5"/>
-</segment>
-<segment>
-<pinref part="Y1" gate="G$1" pin="VDD"/>
-<wire x1="12.7" y1="152.4" x2="7.62" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="152.4" x2="7.62" y2="154.94" width="0.1524" layer="91"/>
-<label x="7.62" y="154.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="Y1" gate="G$1" pin="TRI-STATE"/>
-<wire x1="12.7" y1="149.86" x2="2.54" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="149.86" x2="2.54" y2="142.24" width="0.1524" layer="91"/>
-<label x="2.54" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="BAROMETER" gate="G$1" pin="VDDIO"/>
@@ -7014,16 +6945,6 @@ naming: grid - package width</description>
 <label x="111.76" y="248.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="132.08" x2="152.4" y2="134.62" width="0.1524" layer="91"/>
-<label x="152.4" y="134.62" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="139.7" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
-<label x="160.02" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="142.24" y1="104.14" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="1"/>
 <label x="121.92" y="104.14" size="1.778" layer="95"/>
@@ -7063,17 +6984,30 @@ naming: grid - package width</description>
 <wire x1="53.34" y1="297.18" x2="53.34" y2="294.64" width="0.1524" layer="91"/>
 <junction x="53.34" y="294.64"/>
 </segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="VDD"/>
+<wire x1="2.54" y1="149.86" x2="-2.54" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="149.86" x2="-2.54" y2="152.4" width="0.1524" layer="91"/>
+<label x="-2.54" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Y1" gate="G$1" pin="TRI-STATE"/>
+<wire x1="2.54" y1="147.32" x2="-7.62" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="147.32" x2="-7.62" y2="139.7" width="0.1524" layer="91"/>
+<label x="-7.62" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="127" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
+<label x="175.26" y="129.54" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="182.88" y1="134.62" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
+<label x="182.88" y="137.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="AIRSPEED" gate="G$1" pin="GROUND"/>
-<wire x1="35.56" y1="121.92" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="124.46" x2="10.16" y2="124.46" width="0.1524" layer="91"/>
-<junction x="17.78" y="124.46"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-</segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -7165,10 +7099,6 @@ naming: grid - package width</description>
 <wire x1="129.54" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
 <label x="124.46" y="91.44" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="55.88" y1="149.86" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="BAROMETER" gate="G$1" pin="GND_1"/>
@@ -7413,6 +7343,12 @@ naming: grid - package width</description>
 <wire x1="45.72" y1="269.24" x2="48.26" y2="269.24" width="0.1524" layer="91"/>
 <junction x="48.26" y="269.24"/>
 </segment>
+<segment>
+<wire x1="45.72" y1="147.32" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="Y1" gate="G$1" pin="GROUND"/>
+<wire x1="40.64" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="I2C2_SCL" class="0">
 <segment>
@@ -7431,12 +7367,6 @@ naming: grid - package width</description>
 </net>
 <net name="I2C3_SCL" class="0">
 <segment>
-<pinref part="AIRSPEED" gate="G$1" pin="SCL_(I2C)_/_SCLK_(SPI)"/>
-<wire x1="35.56" y1="114.3" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
-<label x="35.56" y="101.6" size="1.778" layer="95" rot="R90"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="U5" gate="G$1" pin="PA8"/>
 <wire x1="66.04" y1="205.74" x2="55.88" y2="205.74" width="0.1524" layer="91"/>
 <label x="53.34" y="205.74" size="1.778" layer="95"/>
@@ -7451,13 +7381,6 @@ naming: grid - package width</description>
 </segment>
 </net>
 <net name="I2C3_SDA" class="0">
-<segment>
-<pinref part="AIRSPEED" gate="G$1" pin="SDA_(I2C)_/_MISO_(SPI)"/>
-<wire x1="35.56" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="116.84" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<label x="30.48" y="104.14" size="1.778" layer="95" rot="R90"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-</segment>
 <segment>
 <wire x1="185.42" y1="231.14" x2="193.04" y2="231.14" width="0.1524" layer="91"/>
 <label x="187.96" y="231.14" size="1.778" layer="95"/>
@@ -7498,11 +7421,6 @@ naming: grid - package width</description>
 <pinref part="U5" gate="G$2" pin="PB9"/>
 </segment>
 <segment>
-<wire x1="177.8" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
-<label x="157.48" y="121.92" size="1.778" layer="95"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <label x="172.72" y="96.52" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="21"/>
 <wire x1="177.8" y1="96.52" x2="157.48" y2="96.52" width="0.1524" layer="91"/>
@@ -7515,17 +7433,17 @@ naming: grid - package width</description>
 <junction x="10.16" y="71.12"/>
 <label x="2.54" y="71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="200.66" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<label x="180.34" y="116.84" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="I2C1_SCL" class="0">
 <segment>
 <wire x1="139.7" y1="233.68" x2="132.08" y2="233.68" width="0.1524" layer="91"/>
 <label x="127" y="233.68" size="1.778" layer="95"/>
 <pinref part="U5" gate="G$2" pin="PB8"/>
-</segment>
-<segment>
-<wire x1="177.8" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
-<label x="160.02" y="129.54" size="1.778" layer="95"/>
-<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <label x="172.72" y="93.98" size="1.778" layer="95"/>
@@ -7539,6 +7457,11 @@ naming: grid - package width</description>
 <wire x1="25.4" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
 <junction x="25.4" y="73.66"/>
 <label x="17.78" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="200.66" y1="124.46" x2="182.88" y2="124.46" width="0.1524" layer="91"/>
+<label x="182.88" y="124.46" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -7557,16 +7480,6 @@ naming: grid - package width</description>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="236.22" x2="228.6" y2="236.22" width="0.1524" layer="91"/>
 <label x="241.3" y="251.46" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="116.84" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
-<junction x="17.78" y="116.84"/>
-<wire x1="25.4" y1="116.84" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="AIRSPEED" gate="G$1" pin="VCC"/>
-<wire x1="25.4" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
-<label x="10.16" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_IN" class="0">
@@ -7773,11 +7686,6 @@ naming: grid - package width</description>
 </net>
 <net name="EXTI3" class="0">
 <segment>
-<pinref part="AIRSPEED" gate="G$1" pin="INT_(I2C)_/_SS_(SPI)"/>
-<wire x1="106.68" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
-<label x="109.22" y="114.3" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="213.36" x2="48.26" y2="213.36" width="0.1524" layer="91"/>
 <label x="35.56" y="213.36" size="1.778" layer="95"/>
@@ -7801,12 +7709,22 @@ naming: grid - package width</description>
 <label x="124.46" y="86.36" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="PA2"/>
+<wire x1="66.04" y1="220.98" x2="55.88" y2="220.98" width="0.1524" layer="91"/>
+<label x="50.8" y="220.98" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="USART2_RX" class="0">
 <segment>
 <wire x1="129.54" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
 <label x="124.46" y="88.9" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="PA3"/>
+<wire x1="66.04" y1="218.44" x2="55.88" y2="218.44" width="0.1524" layer="91"/>
+<label x="50.8" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO_EXTI0" class="0">
@@ -7831,20 +7749,6 @@ naming: grid - package width</description>
 <wire x1="109.22" y1="160.02" x2="99.06" y2="160.02" width="0.1524" layer="91"/>
 <label x="93.98" y="160.02" size="1.778" layer="95"/>
 <pinref part="U5" gate="G$3" pin="PD3"/>
-</segment>
-</net>
-<net name="OSC_IN" class="0">
-<segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="152.4" x2="83.82" y2="152.4" width="0.1524" layer="91"/>
-<label x="78.74" y="152.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="Y1" gate="G$1" pin="OUTPUT"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -7947,11 +7851,6 @@ naming: grid - package width</description>
 <pinref part="U5" gate="G$1" pin="PA6"/>
 <label x="53.34" y="210.82" size="1.778" layer="95"/>
 <wire x1="66.04" y1="210.82" x2="55.88" y2="210.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="SDO2"/>
-<wire x1="254" y1="106.68" x2="261.62" y2="106.68" width="0.1524" layer="91"/>
-<label x="251.46" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="SDO1"/>
@@ -8204,11 +8103,6 @@ naming: grid - package width</description>
 <wire x1="327.66" y1="76.2" x2="335.28" y2="76.2" width="0.1524" layer="91"/>
 <label x="325.12" y="76.2" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="SDO2"/>
-<wire x1="327.66" y1="73.66" x2="335.28" y2="73.66" width="0.1524" layer="91"/>
-<label x="325.12" y="73.66" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SPI3_MOSI" class="0">
 <segment>
@@ -8256,11 +8150,6 @@ naming: grid - package width</description>
 <pinref part="U3" gate="G$1" pin="SDO1"/>
 <wire x1="220.98" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="218.44" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="SDO2"/>
-<wire x1="220.98" y1="63.5" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
-<label x="218.44" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
@@ -8334,12 +8223,26 @@ naming: grid - package width</description>
 <wire x1="213.36" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
 <label x="210.82" y="106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="149.86" y1="149.86" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
+<label x="152.4" y="149.86" size="1.778" layer="95"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="149.86" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
+<junction x="152.4" y="149.86"/>
+</segment>
 </net>
 <net name="CSB_GYRO1" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CSB2"/>
 <wire x1="218.44" y1="104.14" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
 <label x="210.82" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="149.86" y1="147.32" x2="152.4" y2="147.32" width="0.1524" layer="91"/>
+<label x="152.4" y="147.32" size="1.778" layer="95"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
+<junction x="152.4" y="147.32"/>
 </segment>
 </net>
 <net name="3V4" class="0">
@@ -8464,12 +8367,26 @@ naming: grid - package width</description>
 <wire x1="180.34" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
 <label x="177.8" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="149.86" y1="144.78" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
+<label x="152.4" y="144.78" size="1.778" layer="95"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
+<junction x="152.4" y="144.78"/>
+</segment>
 </net>
 <net name="CSB_GYRO2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CSB2"/>
 <wire x1="185.42" y1="60.96" x2="177.8" y2="60.96" width="0.1524" layer="91"/>
 <label x="177.8" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="101.6" y1="152.4" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
+<label x="86.36" y="152.4" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="152.4" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
+<junction x="99.06" y="152.4"/>
 </segment>
 </net>
 <net name="CSB_ACCEL3" class="0">
@@ -8479,12 +8396,24 @@ naming: grid - package width</description>
 <wire x1="287.02" y1="73.66" x2="284.48" y2="73.66" width="0.1524" layer="91"/>
 <label x="284.48" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="101.6" y1="149.86" x2="99.06" y2="149.86" width="0.1524" layer="91"/>
+<label x="86.36" y="149.86" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="149.86" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
+<junction x="99.06" y="149.86"/>
+</segment>
 </net>
 <net name="CSB_GYRO3" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CSB2"/>
 <wire x1="292.1" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="284.48" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="109.22" y1="142.24" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
+<label x="93.98" y="142.24" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$3" pin="PD10"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -8509,6 +8438,32 @@ naming: grid - package width</description>
 <wire x1="15.24" y1="271.78" x2="5.08" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="271.78" x2="5.08" y2="269.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U5" gate="G$3" pin="PD7"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="OSC_IN" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="149.86" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
+<label x="68.58" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="Y1" gate="G$1" pin="OUTPUT"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="149.86" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U5" gate="G$3" pin="PD6"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
