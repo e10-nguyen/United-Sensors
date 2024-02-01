@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "barometer.h"
+#include "gps.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -80,6 +81,7 @@ UART_HandleTypeDef huart4;
 UART_HandleTypeDef huart7;
 UART_HandleTypeDef huart2;
 UART_HandleTypeDef huart3;
+DMA_HandleTypeDef hdma_usart2_rx;
 
 /* USER CODE BEGIN PV */
 
@@ -88,7 +90,7 @@ UART_HandleTypeDef huart3;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-static void MX_ETH_Init(void);
+static void MX_DMA_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_I2C3_Init(void);
@@ -103,6 +105,7 @@ static void MX_SPI6_Init(void);
 static void MX_UART4_Init(void);
 static void MX_UART7_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_ETH_Init(void);
 static void MX_USART3_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
@@ -141,7 +144,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ETH_Init();
+  MX_DMA_Init();
   MX_I2C1_Init();
   MX_I2C2_Init();
   MX_I2C3_Init();
@@ -156,6 +159,7 @@ int main(void)
   MX_UART4_Init();
   MX_UART7_Init();
   MX_USART2_UART_Init();
+  MX_ETH_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
   DPS310_Start();
@@ -166,7 +170,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  DPS310_Poll();
+	  DPS310_Poll();	//3x Baro on I2C1,I2C2, I2C3, outputs on UART2
+	  get_location();	//1x GPS on UART2
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -981,6 +986,22 @@ static void MX_USART3_UART_Init(void)
   /* USER CODE BEGIN USART3_Init 2 */
 
   /* USER CODE END USART3_Init 2 */
+
+}
+
+/**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA2_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA2_Stream0_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
 
 }
 
