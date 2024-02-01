@@ -1176,101 +1176,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="4525DO-DS5AI001DP">
-<description>&lt;Differential Pressure Sensor 1PSI Dual Barbs&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="4525DO-DS...P">
-<description>&lt;b&gt;4525DO-DS...P&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="1.1" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="2" x="3.6" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="3" x="6.1" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="4" x="8.6" y="-8.3" drill="0.78" diameter="1.28"/>
-<pad name="5" x="8.6" y="4.4" drill="0.78" diameter="1.28"/>
-<pad name="6" x="6.1" y="4.4" drill="0.78" diameter="1.28"/>
-<pad name="7" x="3.6" y="4.4" drill="0.78" diameter="1.28"/>
-<pad name="8" x="1.1" y="4.4" drill="0.78" diameter="1.28"/>
-<text x="1.329" y="-1.785" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="1.329" y="-1.785" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="0" y1="4.25" x2="9.9" y2="4.25" width="0.2" layer="51"/>
-<wire x1="9.9" y1="4.25" x2="9.9" y2="-8.15" width="0.2" layer="51"/>
-<wire x1="9.9" y1="-8.15" x2="0" y2="-8.15" width="0.2" layer="51"/>
-<wire x1="0" y1="-8.15" x2="0" y2="4.25" width="0.2" layer="51"/>
-<wire x1="0" y1="1.75" x2="-7.5" y2="1.75" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="1.75" x2="-7.5" y2="-1.75" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="-1.75" x2="0" y2="-1.75" width="0.2" layer="51"/>
-<wire x1="0" y1="-2.15" x2="-7.5" y2="-2.15" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="-2.15" x2="-7.5" y2="-5.65" width="0.2" layer="51"/>
-<wire x1="-7.5" y1="-5.65" x2="0" y2="-5.65" width="0.2" layer="51"/>
-<wire x1="0" y1="4.25" x2="0" y2="1.75" width="0.2" layer="21"/>
-<wire x1="0" y1="1.75" x2="-7.5" y2="1.75" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="1.75" x2="-7.5" y2="-1.75" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="-1.75" x2="0" y2="-1.75" width="0.2" layer="21"/>
-<wire x1="0" y1="-1.75" x2="0" y2="-2.15" width="0.2" layer="21"/>
-<wire x1="0" y1="-2.15" x2="-7.5" y2="-2.15" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="-2.15" x2="-7.5" y2="-5.65" width="0.2" layer="21"/>
-<wire x1="-7.5" y1="-5.65" x2="0" y2="-5.65" width="0.2" layer="21"/>
-<wire x1="0" y1="-5.65" x2="0" y2="-8.15" width="0.2" layer="21"/>
-<wire x1="9.9" y1="4.25" x2="9.9" y2="-8.15" width="0.2" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="4525DO-DS5AI001DP">
-<wire x1="5.08" y1="2.54" x2="66.04" y2="2.54" width="0.254" layer="94"/>
-<wire x1="66.04" y1="-10.16" x2="66.04" y2="2.54" width="0.254" layer="94"/>
-<wire x1="66.04" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<text x="67.31" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="67.31" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="GROUND" x="0" y="0" length="middle" direction="pwr"/>
-<pin name="VCC" x="0" y="-2.54" length="middle" direction="pwr"/>
-<pin name="SDA_(I2C)_/_MISO_(SPI)" x="0" y="-5.08" length="middle"/>
-<pin name="SCL_(I2C)_/_SCLK_(SPI)" x="0" y="-7.62" length="middle"/>
-<pin name="INT_(I2C)_/_SS_(SPI)" x="71.12" y="-7.62" length="middle" rot="R180"/>
-<pin name="NC_1" x="71.12" y="-5.08" length="middle" rot="R180"/>
-<pin name="NC_2" x="71.12" y="-2.54" length="middle" rot="R180"/>
-<pin name="NC_3" x="71.12" y="0" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="4525DO-DS5AI001DP" prefix="U">
-<description>&lt;b&gt;Differential Pressure Sensor 1PSI Dual Barbs&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=MS4525DO&amp;DocType=DS&amp;DocLang=English"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="4525DO-DS5AI001DP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="4525DO-DS...P">
-<connects>
-<connect gate="G$1" pin="GROUND" pad="1"/>
-<connect gate="G$1" pin="INT_(I2C)_/_SS_(SPI)" pad="5"/>
-<connect gate="G$1" pin="NC_1" pad="6"/>
-<connect gate="G$1" pin="NC_2" pad="7"/>
-<connect gate="G$1" pin="NC_3" pad="8"/>
-<connect gate="G$1" pin="SCL_(I2C)_/_SCLK_(SPI)" pad="4"/>
-<connect gate="G$1" pin="SDA_(I2C)_/_MISO_(SPI)" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="ARROW_PART_NUMBER" value="4525DO-DS5AI001DP" constant="no"/>
-<attribute name="ARROW_PRICE-STOCK" value="https://www.arrow.com/en/products/4525do-ds5ai001dp/te-connectivity" constant="no"/>
-<attribute name="DESCRIPTION" value="Differential Pressure Sensor 1PSI Dual Barbs" constant="no"/>
-<attribute name="HEIGHT" value="mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="TE Connectivity" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="4525DO-DS5AI001DP" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="824-4525DODS5AI001DP" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Measurement-Specialties/4525DO-DS5AI001DP?qs=oFx6pF86PmDUpUCTX7loEA%3D%3D" constant="no"/>
-<attribute name="MOUSER_TESTING_PART_NUMBER" value="" constant="no"/>
-<attribute name="MOUSER_TESTING_PRICE-STOCK" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="ce-capstone">
 <packages>
 <package name="SON95P300X300X100-7N">
@@ -6217,11 +6122,6 @@ naming: grid - package width</description>
 </class>
 </classes>
 <parts>
-<part name="AIRSPEED" library="4525DO-DS5AI001DP" deviceset="4525DO-DS5AI001DP" device=""/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402-6.3V-10%-X7R" value="0.1uF">
-<attribute name="SPICEPREFIX" value="C"/>
-</part>
-<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="POWER_MODULE" library="ce-capstone" deviceset="LD39050PU33R" device=""/>
 <part name="U$1" library="ce-capstone" deviceset="STPS1L30A" device=""/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402-6.3V-10%-X7R" value="0.1uF"/>
@@ -6242,8 +6142,6 @@ naming: grid - package width</description>
 <part name="C21" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
 <part name="C22" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
-<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="JST_CONNECTION" library="B4B-XH-A_LF__SN_" deviceset="B4B-XH-A_LF__SN_" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
@@ -6352,17 +6250,6 @@ naming: grid - package width</description>
 <plain>
 </plain>
 <instances>
-<instance part="AIRSPEED" gate="G$1" x="35.56" y="121.92" smashed="yes">
-<attribute name="NAME" x="41.91" y="129.54" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="41.91" y="127" size="1.778" layer="96" align="center-left"/>
-</instance>
-<instance part="C3" gate="G$1" x="17.78" y="119.38" smashed="yes">
-<attribute name="NAME" x="19.304" y="122.301" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="19.304" y="117.221" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="GND8" gate="1" x="10.16" y="121.92" smashed="yes">
-<attribute name="VALUE" x="7.62" y="119.38" size="1.778" layer="96"/>
-</instance>
 <instance part="POWER_MODULE" gate="G$1" x="266.7" y="236.22" smashed="yes">
 <attribute name="NAME" x="256.54" y="244.84" size="1.778" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="256.54" y="224.6" size="1.778" layer="96" ratio="10" rot="SR0"/>
@@ -6439,14 +6326,6 @@ naming: grid - package width</description>
 </instance>
 <instance part="GND21" gate="1" x="375.92" y="152.4" smashed="yes">
 <attribute name="VALUE" x="373.38" y="149.86" size="1.778" layer="96"/>
-</instance>
-<instance part="R6" gate="G$1" x="35.56" y="101.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.084" y="101.6" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="34.036" y="101.6" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
-<instance part="R7" gate="G$1" x="30.48" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.956" y="104.14" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="32.004" y="104.14" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="JST_CONNECTION" gate="G$1" x="292.1" y="205.74" smashed="yes">
 <attribute name="NAME" x="308.61" y="213.36" size="1.778" layer="95" align="center-left"/>
@@ -6872,16 +6751,6 @@ naming: grid - package width</description>
 <pinref part="L1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="96.52" x2="35.56" y2="86.36" width="0.1524" layer="91"/>
-<label x="35.56" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="99.06" x2="30.48" y2="91.44" width="0.1524" layer="91"/>
-<label x="30.48" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="S1" gate="G$1" pin="2"/>
 <pinref part="S1" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="200.66" x2="205.74" y2="205.74" width="0.1524" layer="91"/>
@@ -7066,15 +6935,6 @@ naming: grid - package width</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="AIRSPEED" gate="G$1" pin="GROUND"/>
-<wire x1="35.56" y1="121.92" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="124.46" x2="17.78" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="124.46" x2="10.16" y2="124.46" width="0.1524" layer="91"/>
-<junction x="17.78" y="124.46"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="228.6" x2="241.3" y2="228.6" width="0.1524" layer="91"/>
@@ -7169,6 +7029,8 @@ naming: grid - package width</description>
 <segment>
 <wire x1="55.88" y1="149.86" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
+<pinref part="Y1" gate="G$1" pin="GROUND"/>
+<wire x1="50.8" y1="149.86" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BAROMETER" gate="G$1" pin="GND_1"/>
@@ -7431,12 +7293,6 @@ naming: grid - package width</description>
 </net>
 <net name="I2C3_SCL" class="0">
 <segment>
-<pinref part="AIRSPEED" gate="G$1" pin="SCL_(I2C)_/_SCLK_(SPI)"/>
-<wire x1="35.56" y1="114.3" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
-<label x="35.56" y="101.6" size="1.778" layer="95" rot="R90"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="U5" gate="G$1" pin="PA8"/>
 <wire x1="66.04" y1="205.74" x2="55.88" y2="205.74" width="0.1524" layer="91"/>
 <label x="53.34" y="205.74" size="1.778" layer="95"/>
@@ -7451,13 +7307,6 @@ naming: grid - package width</description>
 </segment>
 </net>
 <net name="I2C3_SDA" class="0">
-<segment>
-<pinref part="AIRSPEED" gate="G$1" pin="SDA_(I2C)_/_MISO_(SPI)"/>
-<wire x1="35.56" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="116.84" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
-<label x="30.48" y="104.14" size="1.778" layer="95" rot="R90"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-</segment>
 <segment>
 <wire x1="185.42" y1="231.14" x2="193.04" y2="231.14" width="0.1524" layer="91"/>
 <label x="187.96" y="231.14" size="1.778" layer="95"/>
@@ -7557,16 +7406,6 @@ naming: grid - package width</description>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="236.22" x2="228.6" y2="236.22" width="0.1524" layer="91"/>
 <label x="241.3" y="251.46" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="116.84" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
-<junction x="17.78" y="116.84"/>
-<wire x1="25.4" y1="116.84" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="AIRSPEED" gate="G$1" pin="VCC"/>
-<wire x1="25.4" y1="119.38" x2="35.56" y2="119.38" width="0.1524" layer="91"/>
-<label x="10.16" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_IN" class="0">
@@ -7772,11 +7611,6 @@ naming: grid - package width</description>
 </segment>
 </net>
 <net name="EXTI3" class="0">
-<segment>
-<pinref part="AIRSPEED" gate="G$1" pin="INT_(I2C)_/_SS_(SPI)"/>
-<wire x1="106.68" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
-<label x="109.22" y="114.3" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="213.36" x2="48.26" y2="213.36" width="0.1524" layer="91"/>
@@ -8334,12 +8168,22 @@ naming: grid - package width</description>
 <wire x1="213.36" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
 <label x="210.82" y="106.68" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PE7"/>
+<wire x1="144.78" y1="149.86" x2="154.94" y2="149.86" width="0.1524" layer="91"/>
+<label x="147.32" y="149.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CSB_GYRO1" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CSB2"/>
 <wire x1="218.44" y1="104.14" x2="210.82" y2="104.14" width="0.1524" layer="91"/>
 <label x="210.82" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PE8"/>
+<wire x1="144.78" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
+<label x="147.32" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3V4" class="0">
@@ -8464,12 +8308,22 @@ naming: grid - package width</description>
 <wire x1="180.34" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
 <label x="177.8" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PE9"/>
+<wire x1="144.78" y1="144.78" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
+<label x="147.32" y="144.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CSB_GYRO2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="CSB2"/>
 <wire x1="185.42" y1="60.96" x2="177.8" y2="60.96" width="0.1524" layer="91"/>
 <label x="177.8" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PD6"/>
+<wire x1="109.22" y1="152.4" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
+<label x="93.98" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CSB_ACCEL3" class="0">
@@ -8479,12 +8333,22 @@ naming: grid - package width</description>
 <wire x1="287.02" y1="73.66" x2="284.48" y2="73.66" width="0.1524" layer="91"/>
 <label x="284.48" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PD7"/>
+<wire x1="109.22" y1="149.86" x2="99.06" y2="149.86" width="0.1524" layer="91"/>
+<label x="93.98" y="149.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CSB_GYRO3" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CSB2"/>
 <wire x1="292.1" y1="71.12" x2="284.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="284.48" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PD8"/>
+<wire x1="109.22" y1="147.32" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
+<label x="93.98" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
