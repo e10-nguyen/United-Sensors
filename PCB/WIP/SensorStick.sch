@@ -6007,8 +6007,8 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <part name="R20" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 <part name="R21" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 <part name="LIDAR" library="jst" deviceset="B6B-ZR" device=""/>
-<part name="CON2" library="jst" deviceset="B6B-ZR" device=""/>
-<part name="CON3" library="jst" deviceset="B6B-ZR" device=""/>
+<part name="OP_FLOW" library="jst" deviceset="B6B-ZR" device=""/>
+<part name="RC" library="jst" deviceset="B6B-ZR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6478,11 +6478,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <attribute name="NAME" x="119.38" y="120.142" size="1.27" layer="95"/>
 <attribute name="VALUE" x="119.38" y="99.822" size="1.27" layer="96"/>
 </instance>
-<instance part="CON2" gate="G$1" x="91.44" y="116.84" smashed="yes">
+<instance part="OP_FLOW" gate="G$1" x="91.44" y="116.84" smashed="yes">
 <attribute name="NAME" x="91.44" y="120.142" size="1.27" layer="95"/>
 <attribute name="VALUE" x="91.44" y="99.822" size="1.27" layer="96"/>
 </instance>
-<instance part="CON3" gate="G$1" x="68.58" y="116.84" smashed="yes">
+<instance part="RC" gate="G$1" x="68.58" y="116.84" smashed="yes">
 <attribute name="NAME" x="68.58" y="120.142" size="1.27" layer="95"/>
 <attribute name="VALUE" x="68.58" y="99.822" size="1.27" layer="96"/>
 </instance>
@@ -6710,6 +6710,16 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <wire x1="114.3" y1="116.84" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
 <label x="109.22" y="116.84" size="1.778" layer="95"/>
 <pinref part="LIDAR" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="OP_FLOW" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="116.84" x2="78.74" y2="116.84" width="0.1524" layer="91"/>
+<label x="78.74" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RC" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
+<label x="55.88" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7054,6 +7064,16 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <wire x1="114.3" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <label x="109.22" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OP_FLOW" gate="G$1" pin="6"/>
+<wire x1="86.36" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
+<label x="78.74" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RC" gate="G$1" pin="6"/>
+<wire x1="63.5" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
+<label x="55.88" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -7695,6 +7715,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <wire x1="15.24" y1="281.94" x2="5.08" y2="281.94" width="0.1524" layer="91"/>
 <label x="2.54" y="281.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="OP_FLOW" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="114.3" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
+<label x="76.2" y="114.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI6_MISO" class="0">
 <segment>
@@ -7706,6 +7731,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <pinref part="U10" gate="G$1" pin="SDA/SDI/SDO"/>
 <wire x1="15.24" y1="279.4" x2="5.08" y2="279.4" width="0.1524" layer="91"/>
 <label x="2.54" y="279.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OP_FLOW" gate="G$1" pin="3"/>
+<wire x1="86.36" y1="111.76" x2="78.74" y2="111.76" width="0.1524" layer="91"/>
+<label x="76.2" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI6_MOSI" class="0">
@@ -7719,6 +7749,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <wire x1="15.24" y1="276.86" x2="5.08" y2="276.86" width="0.1524" layer="91"/>
 <label x="2.54" y="276.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="OP_FLOW" gate="G$1" pin="4"/>
+<wire x1="86.36" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
+<label x="76.2" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI6_CS" class="0">
 <segment>
@@ -7731,6 +7766,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <wire x1="195.58" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
 <label x="198.12" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OP_FLOW" gate="G$1" pin="5"/>
+<wire x1="86.36" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<label x="76.2" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C4_SCL" class="0">
@@ -7889,12 +7929,22 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <label x="127" y="241.3" size="1.778" layer="95"/>
 <pinref part="U5" gate="G$2" pin="PB5"/>
 </segment>
+<segment>
+<pinref part="RC" gate="G$1" pin="3"/>
+<wire x1="63.5" y1="111.76" x2="55.88" y2="111.76" width="0.1524" layer="91"/>
+<label x="53.34" y="111.76" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="UART5_TX" class="0">
 <segment>
 <wire x1="139.7" y1="238.76" x2="132.08" y2="238.76" width="0.1524" layer="91"/>
 <label x="127" y="238.76" size="1.778" layer="95"/>
 <pinref part="U5" gate="G$2" pin="PB6"/>
+</segment>
+<segment>
+<pinref part="RC" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
+<label x="53.34" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="NRST1" class="0">
@@ -8212,6 +8262,18 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <segment>
 <pinref part="LIDAR" gate="G$1" pin="4"/>
 <wire x1="114.3" y1="109.22" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="RC" gate="G$1" pin="4"/>
+<wire x1="63.5" y1="109.22" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="RC" gate="G$1" pin="5"/>
+<wire x1="63.5" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

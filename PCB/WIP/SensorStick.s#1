@@ -5803,6 +5803,73 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </deviceset>
 </devicesets>
 </library>
+<library name="jst">
+<packages>
+<package name="B6B-ZR">
+<wire x1="0" y1="0.07" x2="10.5" y2="0.07" width="0.127" layer="21"/>
+<wire x1="10.5" y1="0.07" x2="10.5" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="10.5" y1="-3.43" x2="0" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.43" x2="0" y2="0.07" width="0.127" layer="21"/>
+<text x="-0.75" y="0.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.75" y="-5.365" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="6" x="1.5" y="-1.3" drill="0.7"/>
+<pad name="5" x="3" y="-1.3" drill="0.7"/>
+<pad name="4" x="4.5" y="-1.3" drill="0.7"/>
+<pad name="3" x="6" y="-1.3" drill="0.7"/>
+<pad name="2" x="7.5" y="-1.3" drill="0.7"/>
+<pad name="1" x="9" y="-1.3" drill="0.7"/>
+</package>
+</packages>
+<symbols>
+<symbol name="B6B-ZR">
+<pin name="1" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="-5.08" visible="pin" length="middle"/>
+<pin name="4" x="-5.08" y="-7.62" visible="pin" length="middle"/>
+<pin name="5" x="-5.08" y="-10.16" visible="pin" length="middle"/>
+<pin name="6" x="-5.08" y="-12.7" visible="pin" length="middle"/>
+<text x="0" y="3.302" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-17.018" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-2.54" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-15.24" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="0" y="-7.62" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="0.915809375" width="0.254" layer="94"/>
+<circle x="0" y="-12.7" radius="0.915809375" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="B6B-ZR" prefix="CON">
+<description>&lt;b&gt;JST-ZH Connector&lt;/b&gt;&lt;br&gt;
+6 pol, 1.5mm pitch&lt;br&gt;
+Package: &lt;b&gt;B6B-ZR&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://www.jst-mfg.com/product/pdf/eng/eZH.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="B6B-ZR" x="-2.54" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="B6B-ZR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5939,6 +6006,9 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <part name="R19" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 <part name="R20" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 <part name="R21" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
+<part name="LIDAR" library="jst" deviceset="B6B-ZR" device=""/>
+<part name="CON2" library="jst" deviceset="B6B-ZR" device=""/>
+<part name="CON3" library="jst" deviceset="B6B-ZR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6404,6 +6474,18 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </instance>
 <instance part="R20" gate="G$1" x="147.32" y="147.32" smashed="yes"/>
 <instance part="R21" gate="G$1" x="147.32" y="144.78" smashed="yes"/>
+<instance part="LIDAR" gate="G$1" x="119.38" y="116.84" smashed="yes">
+<attribute name="NAME" x="119.38" y="120.142" size="1.27" layer="95"/>
+<attribute name="VALUE" x="119.38" y="99.822" size="1.27" layer="96"/>
+</instance>
+<instance part="CON2" gate="G$1" x="91.44" y="116.84" smashed="yes">
+<attribute name="NAME" x="91.44" y="120.142" size="1.27" layer="95"/>
+<attribute name="VALUE" x="91.44" y="99.822" size="1.27" layer="96"/>
+</instance>
+<instance part="CON3" gate="G$1" x="68.58" y="116.84" smashed="yes">
+<attribute name="NAME" x="68.58" y="120.142" size="1.27" layer="95"/>
+<attribute name="VALUE" x="68.58" y="99.822" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6623,6 +6705,11 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="134.62" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
 <label x="182.88" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="116.84" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
+<label x="109.22" y="116.84" size="1.778" layer="95"/>
+<pinref part="LIDAR" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6961,6 +7048,12 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <pinref part="GND22" gate="1" pin="GND"/>
 <pinref part="Y1" gate="G$1" pin="GROUND"/>
 <wire x1="40.64" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LIDAR" gate="G$1" pin="6"/>
+<wire x1="114.3" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
+<label x="109.22" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -7646,6 +7739,11 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <label x="99.06" y="137.16" size="1.778" layer="95"/>
 <pinref part="U5" gate="G$3" pin="PD12"/>
 </segment>
+<segment>
+<wire x1="114.3" y1="114.3" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="LIDAR" gate="G$1" pin="2"/>
+<label x="106.68" y="114.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LPUART1_TX" class="0">
 <segment>
@@ -7773,6 +7871,16 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <wire x1="139.7" y1="236.22" x2="132.08" y2="236.22" width="0.1524" layer="91"/>
 <label x="127" y="236.22" size="1.778" layer="95"/>
 <pinref part="U5" gate="G$2" pin="PB7"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PD13"/>
+<wire x1="101.6" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
+<label x="99.06" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="111.76" x2="109.22" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="LIDAR" gate="G$1" pin="3"/>
+<label x="106.68" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART5_RX" class="0">
@@ -8092,6 +8200,18 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <pinref part="U5" gate="G$2" pin="PB4(!JTRST!)"/>
 <wire x1="139.7" y1="243.84" x2="132.08" y2="243.84" width="0.1524" layer="91"/>
 <label x="129.54" y="243.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="LIDAR" gate="G$1" pin="5"/>
+<wire x1="114.3" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="LIDAR" gate="G$1" pin="4"/>
+<wire x1="114.3" y1="109.22" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

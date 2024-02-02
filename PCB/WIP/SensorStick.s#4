@@ -7935,26 +7935,26 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </net>
 <net name="SPI4_CS" class="0">
 <segment>
-<wire x1="144.78" y1="157.48" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
-<label x="147.32" y="157.48" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$3" pin="PE4"/>
-</segment>
-<segment>
 <pinref part="U9" gate="G$1" pin="CS"/>
 <wire x1="251.46" y1="33.02" x2="243.84" y2="33.02" width="0.1524" layer="91"/>
 <label x="241.3" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PE4"/>
+<wire x1="144.78" y1="157.48" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
+<label x="147.32" y="157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI5_CS" class="0">
-<segment>
-<wire x1="160.02" y1="180.34" x2="152.4" y2="180.34" width="0.1524" layer="91"/>
-<label x="149.86" y="180.34" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$4" pin="PF6"/>
-</segment>
 <segment>
 <pinref part="U11" gate="G$1" pin="CS"/>
 <wire x1="198.12" y1="284.48" x2="190.5" y2="284.48" width="0.1524" layer="91"/>
 <label x="187.96" y="284.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$4" pin="PF6"/>
+<wire x1="160.02" y1="180.34" x2="152.4" y2="180.34" width="0.1524" layer="91"/>
+<label x="149.86" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI5_SCK" class="0">
@@ -8031,14 +8031,15 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </net>
 <net name="SPI6_CS" class="0">
 <segment>
-<wire x1="195.58" y1="175.26" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
-<label x="198.12" y="175.26" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$4" pin="PG8"/>
-</segment>
-<segment>
 <pinref part="U10" gate="G$1" pin="CS"/>
 <wire x1="15.24" y1="287.02" x2="7.62" y2="287.02" width="0.1524" layer="91"/>
 <label x="5.08" y="287.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$4" pin="PG8"/>
+<wire x1="195.58" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<label x="198.12" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C4_SCL" class="0">

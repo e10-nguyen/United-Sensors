@@ -7582,6 +7582,11 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <junction x="223.52" y="172.72"/>
 <label x="215.9" y="172.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="!RST"/>
+<wire x1="106.68" y1="226.06" x2="116.84" y2="226.06" width="0.1524" layer="91"/>
+<label x="111.76" y="226.06" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DP" class="0">
 <segment>
@@ -7875,13 +7880,6 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <pinref part="U5" gate="G$1" pin="PA4"/>
 <wire x1="66.04" y1="215.9" x2="55.88" y2="215.9" width="0.1524" layer="91"/>
 <label x="53.34" y="215.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SPI1_CS" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="PA15(JTDI)"/>
-<wire x1="66.04" y1="187.96" x2="58.42" y2="187.96" width="0.1524" layer="91"/>
-<label x="55.88" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C2_SDA" class="0">
@@ -8209,11 +8207,21 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <wire x1="276.86" y1="137.16" x2="256.54" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="CH3_IN"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="PA13(JTMS-SWDIO)"/>
+<wire x1="66.04" y1="193.04" x2="55.88" y2="193.04" width="0.1524" layer="91"/>
+<label x="55.88" y="193.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
 <wire x1="276.86" y1="139.7" x2="256.54" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="CH2_IN"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="PA14(JTCK/SWCLK)"/>
+<wire x1="66.04" y1="190.5" x2="55.88" y2="190.5" width="0.1524" layer="91"/>
+<label x="55.88" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CSB_ACCEL1" class="0">
@@ -8464,6 +8472,13 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <segment>
 <pinref part="U5" gate="G$3" pin="PD6"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="JTDI" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="PA15(JTDI)"/>
+<wire x1="66.04" y1="187.96" x2="55.88" y2="187.96" width="0.1524" layer="91"/>
+<label x="55.88" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
