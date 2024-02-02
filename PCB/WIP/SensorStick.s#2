@@ -6302,7 +6302,6 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <part name="R19" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 <part name="R20" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 <part name="R21" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
-<part name="R22" library="ce-capstone" deviceset="RT0402FRE07220RL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6772,10 +6771,6 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </instance>
 <instance part="R20" gate="G$1" x="147.32" y="147.32" smashed="yes"/>
 <instance part="R21" gate="G$1" x="147.32" y="144.78" smashed="yes"/>
-<instance part="R22" gate="G$1" x="200.66" y="134.62" smashed="yes">
-<attribute name="NAME" x="196.85" y="136.1186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="196.85" y="131.318" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -7935,26 +7930,26 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </net>
 <net name="SPI4_CS" class="0">
 <segment>
-<wire x1="144.78" y1="157.48" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
-<label x="147.32" y="157.48" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$3" pin="PE4"/>
-</segment>
-<segment>
 <pinref part="U9" gate="G$1" pin="CS"/>
 <wire x1="251.46" y1="33.02" x2="243.84" y2="33.02" width="0.1524" layer="91"/>
 <label x="241.3" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$3" pin="PE4"/>
+<wire x1="144.78" y1="157.48" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
+<label x="147.32" y="157.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI5_CS" class="0">
-<segment>
-<wire x1="160.02" y1="180.34" x2="152.4" y2="180.34" width="0.1524" layer="91"/>
-<label x="149.86" y="180.34" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$4" pin="PF6"/>
-</segment>
 <segment>
 <pinref part="U11" gate="G$1" pin="CS"/>
 <wire x1="198.12" y1="284.48" x2="190.5" y2="284.48" width="0.1524" layer="91"/>
 <label x="187.96" y="284.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$4" pin="PF6"/>
+<wire x1="160.02" y1="180.34" x2="152.4" y2="180.34" width="0.1524" layer="91"/>
+<label x="149.86" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI5_SCK" class="0">
@@ -8031,14 +8026,15 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </net>
 <net name="SPI6_CS" class="0">
 <segment>
-<wire x1="195.58" y1="175.26" x2="205.74" y2="175.26" width="0.1524" layer="91"/>
-<label x="198.12" y="175.26" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$4" pin="PG8"/>
-</segment>
-<segment>
 <pinref part="U10" gate="G$1" pin="CS"/>
 <wire x1="15.24" y1="287.02" x2="7.62" y2="287.02" width="0.1524" layer="91"/>
 <label x="5.08" y="287.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$4" pin="PG8"/>
+<wire x1="195.58" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<label x="198.12" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C4_SCL" class="0">
@@ -8092,14 +8088,14 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </net>
 <net name="SPI3_MISO" class="0">
 <segment>
-<wire x1="139.7" y1="243.84" x2="132.08" y2="243.84" width="0.1524" layer="91"/>
-<label x="127" y="243.84" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$2" pin="PB4(!JTRST!)"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="SDO1"/>
 <wire x1="327.66" y1="76.2" x2="335.28" y2="76.2" width="0.1524" layer="91"/>
 <label x="325.12" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$2" pin="PC11"/>
+<wire x1="185.42" y1="226.06" x2="193.04" y2="226.06" width="0.1524" layer="91"/>
+<label x="187.96" y="226.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI3_MOSI" class="0">
@@ -8116,14 +8112,14 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 </net>
 <net name="SPI3_SCK" class="0">
 <segment>
-<wire x1="139.7" y1="246.38" x2="132.08" y2="246.38" width="0.1524" layer="91"/>
-<label x="127" y="246.38" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$2" pin="PB3(JTDO/TRACESWO)"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="SCL/SCK"/>
 <wire x1="292.1" y1="66.04" x2="284.48" y2="66.04" width="0.1524" layer="91"/>
 <label x="281.94" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$2" pin="PC10"/>
+<wire x1="185.42" y1="228.6" x2="193.04" y2="228.6" width="0.1524" layer="91"/>
+<label x="187.96" y="228.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_SCK" class="0">
@@ -8479,6 +8475,20 @@ Source: &lt;a href="https://ecsxtal.com/store/pdf/ECS-TXO-3225MV.pdf"&gt; Datash
 <pinref part="U5" gate="G$1" pin="PA15(JTDI)"/>
 <wire x1="66.04" y1="187.96" x2="55.88" y2="187.96" width="0.1524" layer="91"/>
 <label x="55.88" y="187.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TRACESWO" class="0">
+<segment>
+<pinref part="U5" gate="G$2" pin="PB3(JTDO/TRACESWO)"/>
+<wire x1="139.7" y1="246.38" x2="132.08" y2="246.38" width="0.1524" layer="91"/>
+<label x="129.54" y="246.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="JTRST" class="0">
+<segment>
+<pinref part="U5" gate="G$2" pin="PB4(!JTRST!)"/>
+<wire x1="139.7" y1="243.84" x2="132.08" y2="243.84" width="0.1524" layer="91"/>
+<label x="129.54" y="243.84" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

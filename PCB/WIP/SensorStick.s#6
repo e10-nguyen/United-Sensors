@@ -7783,11 +7783,6 @@ naming: grid - package width</description>
 <wire x1="66.04" y1="210.82" x2="55.88" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U4" gate="G$1" pin="SDO2"/>
-<wire x1="254" y1="106.68" x2="261.62" y2="106.68" width="0.1524" layer="91"/>
-<label x="251.46" y="106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="SDO1"/>
 <wire x1="254" y1="109.22" x2="261.62" y2="109.22" width="0.1524" layer="91"/>
 <label x="251.46" y="109.22" size="1.778" layer="95"/>
@@ -8038,11 +8033,6 @@ naming: grid - package width</description>
 <wire x1="327.66" y1="76.2" x2="335.28" y2="76.2" width="0.1524" layer="91"/>
 <label x="325.12" y="76.2" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="SDO2"/>
-<wire x1="327.66" y1="73.66" x2="335.28" y2="73.66" width="0.1524" layer="91"/>
-<label x="325.12" y="73.66" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SPI3_MOSI" class="0">
 <segment>
@@ -8090,11 +8080,6 @@ naming: grid - package width</description>
 <pinref part="U3" gate="G$1" pin="SDO1"/>
 <wire x1="220.98" y1="66.04" x2="228.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="218.44" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="SDO2"/>
-<wire x1="220.98" y1="63.5" x2="228.6" y2="63.5" width="0.1524" layer="91"/>
-<label x="218.44" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI2_MOSI" class="0">
