@@ -6009,6 +6009,13 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <part name="LIDAR" library="jst" deviceset="B6B-ZR" device=""/>
 <part name="OP_FLOW" library="jst" deviceset="B6B-ZR" device=""/>
 <part name="RC" library="jst" deviceset="B6B-ZR" device=""/>
+<part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2.5/4" package3d_urn="urn:adsk.eagle:package:5408/1" value="0.1uF"/>
+<part name="C37" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0805-25V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="1.0uF"/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6486,6 +6493,29 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <attribute name="NAME" x="68.58" y="120.142" size="1.27" layer="95"/>
 <attribute name="VALUE" x="68.58" y="99.822" size="1.27" layer="96"/>
 </instance>
+<instance part="C3" gate="G$1" x="119.38" y="238.76" smashed="yes">
+<attribute name="NAME" x="120.904" y="239.141" size="1.778" layer="95"/>
+<attribute name="VALUE" x="120.904" y="234.061" size="1.778" layer="96"/>
+</instance>
+<instance part="C37" gate="G$1" x="119.38" y="251.46" smashed="yes">
+<attribute name="NAME" x="120.904" y="254.381" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="120.904" y="249.301" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND8" gate="1" x="124.46" y="243.84" smashed="yes">
+<attribute name="VALUE" x="121.92" y="241.3" size="1.778" layer="96"/>
+</instance>
+<instance part="GND32" gate="1" x="121.92" y="228.6" smashed="yes">
+<attribute name="VALUE" x="119.38" y="226.06" size="1.778" layer="96"/>
+</instance>
+<instance part="GND43" gate="1" x="55.88" y="101.6" smashed="yes">
+<attribute name="VALUE" x="53.34" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="GND44" gate="1" x="109.22" y="101.6" smashed="yes">
+<attribute name="VALUE" x="106.68" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="GND45" gate="1" x="78.74" y="101.6" smashed="yes">
+<attribute name="VALUE" x="76.2" y="99.06" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6651,8 +6681,23 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="VDD"/>
-<wire x1="106.68" y1="248.92" x2="114.3" y2="248.92" width="0.1524" layer="91"/>
-<label x="111.76" y="248.92" size="1.778" layer="95"/>
+<wire x1="106.68" y1="248.92" x2="111.76" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="VDDA"/>
+<wire x1="106.68" y1="251.46" x2="111.76" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="251.46" x2="111.76" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="VBAT"/>
+<wire x1="111.76" y1="248.92" x2="111.76" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="246.38" x2="106.68" y2="246.38" width="0.1524" layer="91"/>
+<junction x="111.76" y="248.92"/>
+<pinref part="U5" gate="G$1" pin="VDD33USB"/>
+<wire x1="111.76" y1="246.38" x2="111.76" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="243.84" x2="111.76" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="241.3" x2="106.68" y2="241.3" width="0.1524" layer="91"/>
+<junction x="111.76" y="246.38"/>
+<wire x1="111.76" y1="243.84" x2="119.38" y2="243.84" width="0.1524" layer="91"/>
+<junction x="111.76" y="243.84"/>
+<wire x1="119.38" y1="243.84" x2="119.38" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="VDD_IO"/>
@@ -7063,17 +7108,29 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <pinref part="LIDAR" gate="G$1" pin="6"/>
 <wire x1="114.3" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<label x="109.22" y="104.14" size="1.778" layer="95"/>
+<pinref part="GND44" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="OP_FLOW" gate="G$1" pin="6"/>
 <wire x1="86.36" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="78.74" y="104.14" size="1.778" layer="95"/>
+<pinref part="GND45" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="RC" gate="G$1" pin="6"/>
 <wire x1="63.5" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
-<label x="55.88" y="104.14" size="1.778" layer="95"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="233.68" x2="119.38" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+<wire x1="119.38" y1="231.14" x2="121.92" y2="231.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C37" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="248.92" x2="119.38" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="119.38" y1="246.38" x2="124.46" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2C2_SCL" class="0">
@@ -7260,6 +7317,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <junction x="345.44" y="160.02"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="VREF+"/>
+<wire x1="106.68" y1="238.76" x2="114.3" y2="238.76" width="0.1524" layer="91"/>
+<label x="109.22" y="238.76" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BOOT0" class="0">
 <segment>
@@ -7302,6 +7364,11 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <pinref part="U5" gate="G$1" pin="!RST"/>
 <wire x1="106.68" y1="226.06" x2="116.84" y2="226.06" width="0.1524" layer="91"/>
 <label x="111.76" y="226.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="276.86" y1="134.62" x2="256.54" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="CH4_IN"/>
+<label x="256.54" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DP" class="0">
@@ -7947,22 +8014,18 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <label x="53.34" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="NRST1" class="0">
-<segment>
-<wire x1="276.86" y1="134.62" x2="256.54" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="CH4_IN"/>
-</segment>
-</net>
 <net name="SWO" class="0">
 <segment>
 <wire x1="276.86" y1="142.24" x2="256.54" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="CH1_IN"/>
+<label x="256.54" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
 <segment>
 <wire x1="276.86" y1="137.16" x2="256.54" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="CH3_IN"/>
+<label x="256.54" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="PA13(JTMS-SWDIO)"/>
@@ -7974,6 +8037,7 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <segment>
 <wire x1="276.86" y1="139.7" x2="256.54" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="CH2_IN"/>
+<label x="256.54" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="PA14(JTCK/SWCLK)"/>
@@ -8274,6 +8338,22 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <segment>
 <pinref part="RC" gate="G$1" pin="5"/>
 <wire x1="63.5" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PDR_ON" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="PDR_ON"/>
+<wire x1="66.04" y1="231.14" x2="55.88" y2="231.14" width="0.1524" layer="91"/>
+<label x="55.88" y="231.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="VCAP"/>
+<wire x1="106.68" y1="243.84" x2="109.22" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="243.84" x2="109.22" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="C37" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="256.54" x2="119.38" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
