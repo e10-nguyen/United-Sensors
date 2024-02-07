@@ -2059,10 +2059,10 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-14241" x="88.9" y="-76.2" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="26.67" y="9.398" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="R16" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="22" x="69.85" y="55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="70.611996875" y="55.879996875" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-12427" x="-16.51" y="-8.889996875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="69.087996875" y="55.879996875" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="R16" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="22" x="69.85" y="57.15" smashed="yes" rot="R270">
+<attribute name="NAME" x="70.611996875" y="57.149996875" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-12427" x="-16.51" y="-7.619996875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="69.087996875" y="57.149996875" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="R17" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="22" x="59.69" y="45.72" smashed="yes">
 <attribute name="NAME" x="59.69" y="46.482" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -2328,6 +2328,26 @@ design rules under a new name.</description>
 <attribute name="NAME" x="64.77" y="15.621" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-08064" x="64.77" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="64.77" y="17.399" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+</element>
+<element name="R23" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="22" x="10.16" y="-6.35" smashed="yes">
+<attribute name="NAME" x="10.16" y="-5.588" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-12427" x="10.16" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.16" y="-7.112" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R24" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0402" package3d_urn="urn:adsk.eagle:package:39657/1" value="22" x="10.16" y="-10.16" smashed="yes">
+<attribute name="NAME" x="10.16" y="-9.398" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-12427" x="10.16" y="-10.16" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.16" y="-10.922" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R22" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0" x="10.16" y="-13.97" smashed="yes">
+<attribute name="NAME" x="10.16" y="-13.208" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-08609" x="10.16" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.16" y="-14.732" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="R25" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="0" x="10.16" y="-17.78" smashed="yes">
+<attribute name="NAME" x="10.16" y="-17.018" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-08609" x="10.16" y="-17.78" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.16" y="-18.542" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 </elements>
 <signals>
@@ -2661,11 +2681,7 @@ design rules under a new name.</description>
 <signal name="GPIO_EXTI2">
 <contactref element="R16" pad="1"/>
 <contactref element="U5" pad="116"/>
-<contactref element="U3" pad="12"/>
-<contactref element="U2" pad="12"/>
-<wire x1="64.77" y1="55.985" x2="69.85" y2="56.46" width="0" layer="19" extent="1-1"/>
-<wire x1="72.39" y1="50.695" x2="69.85" y2="56.46" width="0" layer="19" extent="1-1"/>
-<wire x1="59.86" y1="42.43" x2="64.77" y2="55.985" width="0" layer="19" extent="1-1"/>
+<wire x1="59.86" y1="42.43" x2="69.85" y2="57.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_DP">
 <contactref element="USB_COMM_MODE_FILTER" pad="6"/>
@@ -2785,10 +2801,12 @@ design rules under a new name.</description>
 <signal name="EXTI2">
 <contactref element="R16" pad="2"/>
 <contactref element="U4" pad="12"/>
-<wire x1="50.8" y1="58.525" x2="69.85" y2="55.3" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="58.525" x2="69.85" y2="56.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EXTI3">
 <contactref element="R17" pad="2"/>
+<contactref element="U3" pad="12"/>
+<wire x1="60.27" y1="45.72" x2="72.39" y2="50.695" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EXTI4">
 <contactref element="R18" pad="2"/>
@@ -2806,10 +2824,6 @@ design rules under a new name.</description>
 <signal name="GPIO_EXTI0">
 <contactref element="R14" pad="1"/>
 <contactref element="U5" pad="114"/>
-<contactref element="U3" pad="16"/>
-<contactref element="U2" pad="16"/>
-<wire x1="62.855" y1="57.15" x2="74.305" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="55.3" y1="45.72" x2="62.855" y2="57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="60.86" y1="42.43" x2="55.3" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO_EXTI3">
@@ -2846,20 +2860,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="IMU_INT4">
 <contactref element="U4" pad="13"/>
-<contactref element="U2" pad="13"/>
-<contactref element="U3" pad="13"/>
 <contactref element="R10" pad="1"/>
-<wire x1="58.84" y1="59.69" x2="64.27" y2="55.985" width="0" layer="19" extent="1-1"/>
 <wire x1="50.3" y1="58.525" x2="58.84" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="72.89" y1="50.695" x2="64.27" y2="55.985" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IMU_INT2">
 <contactref element="U4" pad="1"/>
-<contactref element="U2" pad="1"/>
-<contactref element="U3" pad="1"/>
 <contactref element="R10" pad="2"/>
-<wire x1="63.27" y1="58.315" x2="73.89" y2="48.365" width="0" layer="19" extent="1-1"/>
-<wire x1="60.54" y1="59.69" x2="63.27" y2="58.315" width="0" layer="19" extent="1-1"/>
 <wire x1="49.3" y1="60.855" x2="60.54" y2="59.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI1_SCK">
@@ -3208,6 +3214,49 @@ design rules under a new name.</description>
 <contactref element="U5" pad="60"/>
 <contactref element="R21" pad="1"/>
 <wire x1="57.36" y1="21.07" x2="71.955" y2="45.72" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPIO_EXTI0_1">
+<contactref element="U5" pad="56"/>
+<contactref element="R23" pad="1"/>
+<wire x1="9.58" y1="-6.35" x2="55.36" y2="21.07" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPIO_EXTI1_1">
+<contactref element="U5" pad="57"/>
+<contactref element="R24" pad="1"/>
+<wire x1="9.58" y1="-10.16" x2="55.86" y2="21.07" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EXTI0_1">
+<contactref element="R23" pad="2"/>
+<contactref element="U2" pad="16"/>
+<wire x1="10.74" y1="-6.35" x2="62.855" y2="57.15" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EXTI1_1">
+<contactref element="R24" pad="2"/>
+<contactref element="U2" pad="12"/>
+<wire x1="10.74" y1="-10.16" x2="64.77" y2="55.985" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="EXTI1">
+<contactref element="U3" pad="16"/>
+</signal>
+<signal name="IMU_INT1">
+<contactref element="R22" pad="1"/>
+<contactref element="U3" pad="1"/>
+<wire x1="9.31" y1="-13.97" x2="73.89" y2="48.365" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IMU_INT3">
+<contactref element="R22" pad="2"/>
+<contactref element="U3" pad="13"/>
+<wire x1="11.01" y1="-13.97" x2="72.89" y2="50.695" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IMU_INT5">
+<contactref element="R25" pad="1"/>
+<contactref element="U2" pad="1"/>
+<wire x1="9.31" y1="-17.78" x2="63.27" y2="58.315" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="IMU_INT6">
+<contactref element="R25" pad="2"/>
+<contactref element="U2" pad="13"/>
+<wire x1="11.01" y1="-17.78" x2="64.27" y2="55.985" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
