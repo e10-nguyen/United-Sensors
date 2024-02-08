@@ -2,14 +2,14 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/astra/STM32CubeIDE/workspace_1.13.2/United-Sensors/PCB/WIP/SensorStick.brd
 
-Start at      : 16:59:09 (2/7/2024)
-End at        : 16:59:15 (2/7/2024)
+Start at      : 17:31:41 (2/7/2024)
+End at        : 17:31:43 (2/7/2024)
 Elapsed time  : 00:00:00
 
-Signals       :   106   RoutingGrid: 6.25 mil  Layers: 4
-Connections   :   267   predefined:  267 ( 135 Vias )
+Signals       :    93   RoutingGrid: 12.5 mil  Layers: 4
+Connections   :   265   predefined:  265 ( 140 Vias )
 
-Router memory :   1365680
+Router memory :   353904
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
