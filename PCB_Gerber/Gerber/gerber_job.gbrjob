@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2024-02-08T03:36:00Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.99,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "SensorStick"
+        },
+        "Owner": "Yicheng Qin <yqin@ucsb.edu>",
+        "Size": {
+            "X": 54.59,
+            "Y": 66.98
+        }
+    }
+}
