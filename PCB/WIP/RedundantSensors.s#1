@@ -6414,7 +6414,7 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <pinref part="C51" gate="G$1" pin="2"/>
 <wire x1="-276.86" y1="177.8" x2="-269.24" y2="177.8" width="0.1524" layer="91"/>
 <junction x="-276.86" y="177.8"/>
-<label x="-299.72" y="177.8" size="1.778" layer="95"/>
+<label x="-302.26" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6790,7 +6790,7 @@ Source: &lt;a href="http://www.jst-mfg.com/product/pdf/eng/eZH.pdf"&gt;http://ww
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="-299.72" y1="167.64" x2="-292.1" y2="167.64" width="0.1524" layer="91"/>
-<label x="-304.8" y="167.64" size="1.778" layer="95"/>
+<label x="-302.26" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
