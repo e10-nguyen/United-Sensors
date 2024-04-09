@@ -63,6 +63,7 @@ SPI_HandleTypeDef hspi1;
 TIM_HandleTypeDef htim2;
 
 USART_HandleTypeDef husart1;
+
 USART_HandleTypeDef husart2;
 
 /* USER CODE BEGIN PV */
@@ -104,10 +105,10 @@ uint16_t gyro_dev_add;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_USART1_Init(void);
-static void MX_USART2_Init(void);
 /* USER CODE BEGIN PFP */
 /*********************************************************************/
 /* function declarations */
@@ -210,6 +211,7 @@ void bmi08x_data_sync_int();
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
 #ifdef __GNUC__
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #else
@@ -217,7 +219,7 @@ void bmi08x_data_sync_int();
 #endif
 
 PUTCHAR_PROTOTYPE {
-	HAL_USART_Transmit(&huart2, (uint8_t*) &ch, 1, HAL_MAX_DELAY);
+	HAL_USART_Transmit(&husart2, (uint8_t*) &ch, 1, HAL_MAX_DELAY);
 }
 /*********************************************************************/
 /* functions */
@@ -625,10 +627,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USART2_UART_Init();
   MX_SPI1_Init();
   MX_TIM2_Init();
-  MX_USART1_Init();
-  MX_USART2_Init();
   /* USER CODE BEGIN 2 */
 
 	int8_t rslt;
@@ -638,12 +639,12 @@ int main(void)
 
 //  	bmi085_handle_t bmi085_handle = {
 //  			.spi_handle = &hspi1,
-//  			.nssg_port = GPIOF,
-//  			.nssa_port = GPIOF,
+//  			.nssg_port = GPIOC,
+//  			.nssa_port = GPIOC,
 //  			.nssa_pin = BMI085_NSSa_Pin,
 //  			.nssg_pin = BMI085_NSSg_Pin,
 //  //			.ps_pin = BMI085_PS_Pin,
-//  //			.ps_port = GPIOF,
+//  //			.ps_port = GPIOC,
 //  			.timer_ptr= &htim2 };
 	/* Interface given as parameter
 	 *           For I2C : BMI08X_I2C_INTF
@@ -975,7 +976,7 @@ static void MX_USART1_Init(void)
   * @param None
   * @retval None
   */
-static void MX_USART2_Init(void)
+static void MX_USART2_UART_Init(void)
 {
 
   /* USER CODE BEGIN USART2_Init 0 */
@@ -1030,18 +1031,20 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOF_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_1|GPIO_PIN_2, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, BMI085_NSSg_Pin|BMI085_NSSa_Pin, GPIO_PIN_SET);
 
-  /*Configure GPIO pins : PF1 PF2 */
-  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_2;
+  /*Configure GPIO pins : PC8 PC9 */
+  GPIO_InitStruct.Pin = BMI085_NSSg_Pin|BMI085_NSSa_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
@@ -1080,7 +1083,7 @@ BMI08X_INTF_RET_TYPE bmi08x_spi_read(uint8_t reg_addr, uint8_t *reg_data,
 
 	uint16_t dev_addr = *(uint16_t*) intf_ptr;
 
-	HAL_GPIO_WritePin(GPIOF, dev_addr, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOC, dev_addr, GPIO_PIN_RESET);
 
 	if (HAL_SPI_Transmit(&hspi1, &reg_addr, 1, 50) != HAL_OK) {
 		return 1;
@@ -1089,7 +1092,7 @@ BMI08X_INTF_RET_TYPE bmi08x_spi_read(uint8_t reg_addr, uint8_t *reg_data,
 		return 1;
 	}
 
-	HAL_GPIO_WritePin(GPIOF, dev_addr, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOC, dev_addr, GPIO_PIN_SET);
 	bmi08x_delay_us(100, 0);
 	return 0;
 }
@@ -1099,7 +1102,7 @@ BMI08X_INTF_RET_TYPE bmi08x_spi_write(uint8_t reg_addr, const uint8_t *reg_data,
 
 	uint16_t dev_addr = *(uint16_t*) intf_ptr;
 
-	HAL_GPIO_WritePin(GPIOF, dev_addr, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIOC, dev_addr, GPIO_PIN_RESET);
 
 	if (HAL_SPI_Transmit(&hspi1, &reg_addr, 1, 50) != HAL_OK) {
 		return 1;
@@ -1108,7 +1111,7 @@ BMI08X_INTF_RET_TYPE bmi08x_spi_write(uint8_t reg_addr, const uint8_t *reg_data,
 		return 1;
 	}
 
-	HAL_GPIO_WritePin(GPIOF, dev_addr, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOC, dev_addr, GPIO_PIN_SET);
 
 	bmi08x_delay_us(100, 0);
 	return 0;
