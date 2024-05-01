@@ -5285,7 +5285,7 @@ Based on the previous library ind-a.lbr&lt;p&gt;
 </instance>
 <instance part="R44" gate="G$1" x="88.9" y="261.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="88.9" y="260.096" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="88.9" y="260.604" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+<attribute name="VALUE" x="88.9" y="263.144" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
 <instance part="R45" gate="G$1" x="88.9" y="259.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="88.9" y="257.556" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
