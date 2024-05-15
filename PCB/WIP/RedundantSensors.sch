@@ -8441,11 +8441,6 @@ Based on the previous library ind-a.lbr&lt;p&gt;
 </net>
 <net name="DRDY2_GYRO" class="0">
 <segment>
-<pinref part="U5" gate="G$3" pin="PE10"/>
-<wire x1="-35.56" y1="185.42" x2="-17.78" y2="185.42" width="0.1524" layer="91"/>
-<label x="-22.86" y="185.42" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="INT3"/>
 <wire x1="241.3" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
 <label x="231.14" y="68.58" size="1.778" layer="95"/>
@@ -8455,17 +8450,22 @@ Based on the previous library ind-a.lbr&lt;p&gt;
 <wire x1="360.68" y1="63.5" x2="373.38" y2="63.5" width="0.1524" layer="91"/>
 <label x="363.22" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-48.26" y1="243.84" x2="-66.04" y2="243.84" width="0.1524" layer="91"/>
+<label x="-48.26" y="243.84" size="1.778" layer="95" rot="R180"/>
+<pinref part="U5" gate="G$1" pin="PA15(JTDI)"/>
+</segment>
 </net>
 <net name="DRDY1_ACC2" class="0">
-<segment>
-<pinref part="U5" gate="G$4" pin="PF13"/>
-<wire x1="33.02" y1="180.34" x2="15.24" y2="180.34" width="0.1524" layer="91"/>
-<label x="10.16" y="180.34" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="INT1"/>
 <wire x1="360.68" y1="68.58" x2="373.38" y2="68.58" width="0.1524" layer="91"/>
 <label x="363.22" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-71.12" y1="210.82" x2="-88.9" y2="210.82" width="0.1524" layer="91"/>
+<label x="-93.98" y="210.82" size="1.778" layer="95"/>
+<pinref part="U5" gate="G$3" pin="PD0"/>
 </segment>
 </net>
 <net name="DRDY2_GYRO2" class="0">
